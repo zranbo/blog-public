@@ -720,6 +720,8 @@
 
   <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
 
+  <script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.js"></script>
+
    <script type="text/javascript">
         var gitalk = new Gitalk({
           clientID: '59d7d4312cf2afa209e6',
@@ -727,7 +729,7 @@
           repo: 'gitalk_repo',
           owner: 'zranbo',
           admin: ['zranbo'],
-          id: location.pathname,
+          id: md5(location.pathname),
           labels: 'gitalk'.split(',').filter(l => l),
           perPage: 15,
           pagerDirection: 'last',
