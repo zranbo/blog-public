@@ -94,7 +94,7 @@
 <meta property="og:site_name" content="Chaos">
 <meta property="og:description" content="Magic Method (Dunder Method) Python 里面有很多特殊方法，我们管他叫魔术方法(magic method)。之所以特殊，是因为这些方法不同于一般的对象方法的调用方式 (Object.function)，比如对于字符串对象 s = &amp;quot;Hello&amp;quot; 不同于其他的一些语言， s.length() 或者类似的方法来获得字符串的长度，而是采用 len(s)">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-05-14T11:18:14.663Z">
+<meta property="og:updated_time" content="2019-05-14T15:25:47.719Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="流畅的Python - Python数据模型">
 <meta name="twitter:description" content="Magic Method (Dunder Method) Python 里面有很多特殊方法，我们管他叫魔术方法(magic method)。之所以特殊，是因为这些方法不同于一般的对象方法的调用方式 (Object.function)，比如对于字符串对象 s = &amp;quot;Hello&amp;quot; 不同于其他的一些语言， s.length() 或者类似的方法来获得字符串的长度，而是采用 len(s)">
@@ -320,7 +320,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  760
+                  766
                 </span>
               
 
@@ -358,7 +358,7 @@
 
       
         <p><b>Magic Method (Dunder Method)</b></p>
-<p>Python 里面有很多特殊方法，我们管他叫魔术方法(magic method)。之所以特殊，是因为这些方法不同于一般的对象方法的调用方式 (Object.function)，比如对于字符串对象 <code>s = &quot;Hello&quot;</code> 不同于其他的一些语言， <code>s.length()</code> 或者类似的方法来获得字符串的长度，而是采用 <code>len(s)</code> 其实等价于 <code>s.__len__()</code> 这是因为 <code>len()</code> 在计算一个对象的长度的时候，本质就是因为这个对象实现了 <code>__len__()</code> 方法。当然，如果一个对象没有 <code>__len__()</code> 方法，那再使用 <code>len(Object)</code> 的时候会抛出一个 <code>TypeError</code> 告诉你这个对象不包含 <code>len()</code></p>
+<p>Python 里面有很多特殊方法，我们管他叫魔术方法(magic method)。之所以特殊，是因为这些方法不同于一般的对象方法的调用方式 (Object.function)，比如对于字符串对象 <code>s = &quot;Hello&quot;</code> 不同于其他的一些语言， <code>s.length()</code> 或者类似的方法来获得字符串的长度，而是采用 <code>len(s)</code> 但其实我们都知道这等价于 <code>s.__len__()</code> 是因为 <code>len()</code> 在计算一个对象的长度的时候，本身就是因为这个对象实现了 <code>__len__()</code> 方法。当然，如果一个对象没有 <code>__len__()</code> 方法，那再使用 <code>len(Object)</code> 的时候会抛出一个 <code>TypeError</code> 告诉你这个对象不包含 <code>len()</code></p>
 <p>而Python里面这样的特殊方法还有很多，列一个表格说明一下他们</p>
 <table>
 <thead>
