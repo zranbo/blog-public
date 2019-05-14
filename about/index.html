@@ -587,7 +587,7 @@
           owner: 'zranbo',
           admin: ['zranbo'],
           id: location.pathname,
-          labels: 'gitalk',
+          labels: 'gitalk'.split(',').filter(l => l),
           perPage: 15,
           pagerDirection: 'last',
           createIssueManually: true,
