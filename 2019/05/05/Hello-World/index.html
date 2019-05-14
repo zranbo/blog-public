@@ -727,7 +727,7 @@
           repo: 'gitalk_repo',
           owner: 'zranbo',
           admin: ['zranbo'],
-          id: location.pathname,
+          id: location.pathname.split("/").pop().substring(0, 49),
           labels: 'gitalk'.split(',').filter(l => l),
           perPage: 15,
           pagerDirection: 'last',
