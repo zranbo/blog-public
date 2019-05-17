@@ -888,12 +888,12 @@
         var gitalk = new Gitalk({
           clientID: '59d7d4312cf2afa209e6',
           clientSecret: 'eec2ddb55075d517378a484baebb317eff5eee89',
-          repo: 'gitalk_repo',
+          repo: 'blog_comment',
           owner: 'zranbo',
           admin: ['zranbo'],
           id: md5(location.pathname),
-          labels: 'gitalk'.split(',').filter(l => l),
-          perPage: 15,
+          labels: 'comments'.split(',').filter(l => l),
+          perPage: 50,
           pagerDirection: 'last',
           createIssueManually: true,
           distractionFreeMode: false
