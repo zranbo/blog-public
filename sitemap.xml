@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.zranbo.com/tags/index.html</loc>
+    
+    <lastmod>2019-05-17T14:24:13.072Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.zranbo.com/about/index.html</loc>
+    
+    <lastmod>2019-05-17T14:23:39.813Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.zranbo.com/2019/05/14/%E6%B5%81%E7%95%85%E7%9A%84Python-Python%E6%95%B0%E6%8D%AE%E6%A8%A1%E5%9E%8B/</loc>
     
     <lastmod>2019-05-17T11:02:31.285Z</lastmod>
@@ -19,13 +33,6 @@
     <loc>https://www.zranbo.com/2019/05/05/Hello-World/</loc>
     
     <lastmod>2019-05-14T06:07:04.450Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.zranbo.com/about/index.html</loc>
-    
-    <lastmod>2019-05-07T09:32:11.988Z</lastmod>
     
   </url>
   
