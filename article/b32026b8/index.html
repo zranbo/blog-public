@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="Python3">
+  <meta name="keywords" content="Hexo,">
 
 
 
@@ -86,17 +86,18 @@
 
 
 
-<meta name="description" content="chaos blog">
-<meta name="keywords" content="Python3 Tech">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Chaos">
-<meta property="og:url" content="https://www.zranbo.com/index.html">
+<meta name="description" content="Hexo内置引用块 (blockquote)  代码 123&amp;#123;% blockquote [author[, source]] [link] [source_link_title] %&amp;#125;content&amp;#123;% endblockquote %&amp;#125;  效果   Do not just seek happiness for yourself. Seek happiness">
+<meta name="keywords" content="Hexo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo 标签插件">
+<meta property="og:url" content="https://www.zranbo.com/article/b32026b8/index.html">
 <meta property="og:site_name" content="Chaos">
-<meta property="og:description" content="chaos blog">
+<meta property="og:description" content="Hexo内置引用块 (blockquote)  代码 123&amp;#123;% blockquote [author[, source]] [link] [source_link_title] %&amp;#125;content&amp;#123;% endblockquote %&amp;#125;  效果   Do not just seek happiness for yourself. Seek happiness">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-05-17T15:31:30.432Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Chaos">
-<meta name="twitter:description" content="chaos blog">
+<meta name="twitter:title" content="Hexo 标签插件">
+<meta name="twitter:description" content="Hexo内置引用块 (blockquote)  代码 123&amp;#123;% blockquote [author[, source]] [link] [source_link_title] %&amp;#125;content&amp;#123;% endblockquote %&amp;#125;  效果   Do not just seek happiness for yourself. Seek happiness">
 
 
 
@@ -126,13 +127,13 @@
 
 
 
-  <link rel="canonical" href="https://www.zranbo.com/">
+  <link rel="canonical" href="https://www.zranbo.com/article/b32026b8/">
 
 
 
 
 
-  <title>Chaos</title>
+  <title>Hexo 标签插件 | Chaos</title>
   
 
 
@@ -160,8 +161,7 @@
     
   
 
-  <div class="container sidebar-position-right 
-  page-home">
+  <div class="container sidebar-position-right page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -264,9 +264,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -296,9 +296,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/article/b32026b8/" itemprop="url">Hexo 标签插件</a></h1>
+          <h1 class="post-title" itemprop="name headline">Hexo 标签插件</h1>
         
 
         <div class="post-meta">
@@ -379,21 +377,47 @@
       
 
       
-        
-          
-          Hexo内置引用块 (blockquote)
+        <h1 id="Hexo内置"><a href="#Hexo内置" class="headerlink" title="Hexo内置"></a>Hexo内置</h1><p><b>引用块 (blockquote)</b></p>
+<ul>
+<li><p>代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% blockquote [author[, source]] [link] [source_link_title] %&#125;</span><br><span class="line">content</span><br><span class="line">&#123;% endblockquote %&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>效果</p>
+</li>
+</ul>
+<blockquote><p>Do not just seek happiness for yourself. Seek happiness for all. Through kindness. Through mercy.</p>
+<footer><strong>David Levithan</strong><cite>Wide Awake</cite></footer></blockquote>
+<hr>
+<p><b>Pull Quote</b></p>
+<ul>
+<li><p>代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% pullquote [class] %&#125;</span><br><span class="line">content</span><br><span class="line">&#123;% endpullquote %&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>效果</p>
+</li>
+</ul>
+<blockquote class="pullquote Wide Awake"><p>Do not just seek happiness for yourself. Seek happiness for all. Through kindness. Through mercy.</p>
+</blockquote>
+<h1 id="NexT-内置"><a href="#NexT-内置" class="headerlink" title="NexT 内置"></a>NexT 内置</h1><p><b>Bootstrap Callout</b></p>
+<ul>
+<li><p>代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% note [class] %&#125; Content &#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<p>class为一下之一：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">default</span><br><span class="line">primary</span><br><span class="line">success</span><br><span class="line">info</span><br><span class="line">warning</span><br><span class="line">danger</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>效果</p>
+</li>
+</ul>
+<div class="note default"><p>Do not just seek happiness for yourself. Seek happiness for all. Through kindness. Through mercy. </p></div>
 
-代码
-123&#123;% blockquote [author[, source]] [link] [source_link_title] %&#12
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/article/b32026b8/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
+<div class="note primary"><p>Do not just seek happiness for yourself. Seek happiness for all. Through kindness. Through mercy. </p></div>
+<div class="note success"><p>Do not just seek happiness for yourself. Seek happiness for all. Through kindness. Through mercy. </p></div>
+
+<div class="note info"><p>Do not just seek happiness for yourself. Seek happiness for all. Through kindness. Through mercy. </p></div>
+<div class="note warning"><p>Do not just seek happiness for yourself. Seek happiness for all. Through kindness. Through mercy. </p></div>
+
+<div class="note danger"><p>Do not just seek happiness for yourself. Seek happiness for all. Through kindness. Through mercy. </p></div>
+
       
     </div>
     
@@ -403,338 +427,65 @@
     
 
     
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>我知道不会有人点的，但是万一有人想不开呢</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="http://zranbo.oss-cn-beijing.aliyuncs.com/blog/wechat.jpg" alt="zranbo 微信支付">
+        <p>微信支付</p>
+      </div>
+    
+
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
 
     
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://www.zranbo.com/article/2e88435f/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="zranbo">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Chaos">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/article/2e88435f/" itemprop="url">流畅的Python - 序列构成的数组 (二)</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-05-15T17:01:00+08:00">
-                2019-05-15
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-
+            <a href="/tags/Hexo/" rel="tag"># Hexo</a>
           
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  1.1k
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  4
-                </span>
-              
-            </div>
-          
-
-          
-
         </div>
-      </header>
-    
+      
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
+      
       
       
 
       
-        
-          
-          序列类型概念
-谈起序列，我们能说的就有很多了，比如我们很常用的str , list , tuple 等，Python用C语言实现了丰富的序列类型：
-
-容器序列（这些序列可以存放不同类型的数据）
-lis
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/article/2e88435f/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/article/2e88435f/" rel="next" title="流畅的Python - 序列构成的数组 (二)">
+                <i class="fa fa-chevron-left"></i> 流畅的Python - 序列构成的数组 (二)
+              </a>
+            
           </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
 
-    
+          <span class="post-nav-divider"></span>
 
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://www.zranbo.com/article/1bbbb445/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="zranbo">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Chaos">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/article/1bbbb445/" itemprop="url">流畅的Python - Python数据模型 (一)</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+          <div class="post-nav-prev post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-05-14T14:03:00+08:00">
-                2019-05-14
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  776
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  3
-                </span>
-              
-            </div>
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-          Magic Method (Dunder Method)
-Python 里面有很多特殊方法，我们管他叫魔术方法(magic method)。之所以特殊，是因为这些方法不同于一般的对象方法的调用方式 O
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/article/1bbbb445/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -744,167 +495,11 @@ Python 里面有很多特殊方法，我们管他叫魔术方法(magic method)�
   </article>
 
 
-    
-      
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://www.zranbo.com/article/4a17b156/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="zranbo">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Chaos">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/article/4a17b156/" itemprop="url">Hello World</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-05-05T17:52:00+08:00">
-                2019-05-05
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  0
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  1
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          
-          
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/article/4a17b156/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
+    <div class="post-spread">
       
     </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
 
 
           </div>
@@ -912,6 +507,12 @@ Python 里面有很多特殊方法，我们管他叫魔术方法(magic method)�
 
 
           
+
+  
+    <div id="gitalk-container"></div>
+  
+
+
 
         </div>
         
@@ -932,8 +533,17 @@ Python 里面有很多特殊方法，我们管他叫魔术方法(magic method)�
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -994,6 +604,22 @@ Python 里面有很多特殊方法，我们管他叫魔术方法(magic method)�
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Hexo内置"><span class="nav-number">1.</span> <span class="nav-text">Hexo内置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#NexT-内置"><span class="nav-number">2.</span> <span class="nav-text">NexT 内置</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -1153,6 +779,10 @@ Python 里面有很多特殊方法，我们管他叫魔术方法(magic method)�
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
@@ -1193,6 +823,30 @@ Python 里面有很多特殊方法，我们管他叫魔术方法(magic method)�
 
 
 
+
+
+  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+
+  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+  <script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.js"></script>
+
+   <script type="text/javascript">
+        var gitalk = new Gitalk({
+          clientID: '59d7d4312cf2afa209e6',
+          clientSecret: 'eec2ddb55075d517378a484baebb317eff5eee89',
+          repo: 'gitalk_repo',
+          owner: 'zranbo',
+          admin: ['zranbo'],
+          id: md5(location.pathname),
+          labels: 'gitalk'.split(',').filter(l => l),
+          perPage: 15,
+          pagerDirection: 'last',
+          createIssueManually: true,
+          distractionFreeMode: false
+        })
+        gitalk.render('gitalk-container')           
+       </script>
 
   
 
