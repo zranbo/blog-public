@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="Fluent Python,">
+  <meta name="keywords" content="Linux,">
 
 
 
@@ -88,21 +88,18 @@
 
 
 
-<meta name="description" content="泛映射类型 抽象类： 在 collections.abc 模块中有 Mpping 和 MutableMapping 为 dict 和其他一些类提供了最基本的接口 可散列类型  str bytes frozenset只能容纳可散列对象，tuple 只有当其中的所有元素都是可散列类型时，它才是可散列的。 如果一个对象是可散列的，那么在它的生命周期内散列值不变。与此同时，该对象还需要实现 __hash_">
-<meta name="keywords" content="Fluent Python">
+<meta name="description" content="Supervisor Supervisor 是一个用 Python2 实现的 Unix-like 系统进程管理工具。 安装  Ubuntu : apt install supervisor 其他 Linux 发行版: pip install supervisor (只支持 Python2 因此请确定是Python2的pip)  安装完成后会生成三个执行程序：supervisortd supervi">
+<meta name="keywords" content="Linux">
 <meta property="og:type" content="article">
-<meta property="og:title" content="流畅的Python - 字典和集合 (三)">
-<meta property="og:url" content="https://www.zranbo.com/item/3dd06891/index.html">
+<meta property="og:title" content="Linux&#x2F;Unix进程管理工具 - Supervisor">
+<meta property="og:url" content="https://www.zranbo.com/item/1f6c73c0/index.html">
 <meta property="og:site_name" content="Chaos">
-<meta property="og:description" content="泛映射类型 抽象类： 在 collections.abc 模块中有 Mpping 和 MutableMapping 为 dict 和其他一些类提供了最基本的接口 可散列类型  str bytes frozenset只能容纳可散列对象，tuple 只有当其中的所有元素都是可散列类型时，它才是可散列的。 如果一个对象是可散列的，那么在它的生命周期内散列值不变。与此同时，该对象还需要实现 __hash_">
+<meta property="og:description" content="Supervisor Supervisor 是一个用 Python2 实现的 Unix-like 系统进程管理工具。 安装  Ubuntu : apt install supervisor 其他 Linux 发行版: pip install supervisor (只支持 Python2 因此请确定是Python2的pip)  安装完成后会生成三个执行程序：supervisortd supervi">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://zranbo.oss-cn-beijing.aliyuncs.com/blog/dict-uml.png">
-<meta property="og:image" content="https://zranbo.oss-cn-beijing.aliyuncs.com/blog/set-uml.png">
-<meta property="og:updated_time" content="2019-05-26T14:06:10.941Z">
+<meta property="og:updated_time" content="2019-05-28T11:13:22.741Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="流畅的Python - 字典和集合 (三)">
-<meta name="twitter:description" content="泛映射类型 抽象类： 在 collections.abc 模块中有 Mpping 和 MutableMapping 为 dict 和其他一些类提供了最基本的接口 可散列类型  str bytes frozenset只能容纳可散列对象，tuple 只有当其中的所有元素都是可散列类型时，它才是可散列的。 如果一个对象是可散列的，那么在它的生命周期内散列值不变。与此同时，该对象还需要实现 __hash_">
-<meta name="twitter:image" content="https://zranbo.oss-cn-beijing.aliyuncs.com/blog/dict-uml.png">
+<meta name="twitter:title" content="Linux&#x2F;Unix进程管理工具 - Supervisor">
+<meta name="twitter:description" content="Supervisor Supervisor 是一个用 Python2 实现的 Unix-like 系统进程管理工具。 安装  Ubuntu : apt install supervisor 其他 Linux 发行版: pip install supervisor (只支持 Python2 因此请确定是Python2的pip)  安装完成后会生成三个执行程序：supervisortd supervi">
 
 
 
@@ -132,13 +129,13 @@
 
 
 
-  <link rel="canonical" href="https://www.zranbo.com/item/3dd06891/">
+  <link rel="canonical" href="https://www.zranbo.com/item/1f6c73c0/">
 
 
 
 
 
-  <title>流畅的Python - 字典和集合 (三) | Chaos</title>
+  <title>Linux/Unix进程管理工具 - Supervisor | Chaos</title>
   
 
 
@@ -316,7 +313,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://www.zranbo.com/item/3dd06891/">
+    <link itemprop="mainEntityOfPage" href="https://www.zranbo.com/item/1f6c73c0/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="zranbo">
@@ -333,7 +330,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">流畅的Python - 字典和集合 (三)</h1>
+          <h1 class="post-title" itemprop="name headline">Linux/Unix进程管理工具 - Supervisor</h1>
         
 
         <div class="post-meta">
@@ -345,8 +342,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-05-18T12:26:00+08:00">
-                2019-05-18
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-05-28T16:40:00+08:00">
+                2019-05-28
               </time>
             
 
@@ -393,7 +390,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  5
+                  4
                 </span>
               
             </div>
@@ -414,204 +411,26 @@
       
 
       
-        <p><b>泛映射类型</b> 抽象类：</p>
-<p>在 collections.abc 模块中有 <b><a href="https://docs.python.org/3/library/collections.abc.html#collections.abc.Mapping" target="_blank" rel="noopener"><code>Mpping</code></a></b> 和 <b><a href="https://docs.python.org/3/library/collections.abc.html#collections.abc.MutableMapping" target="_blank" rel="noopener"><code>MutableMapping</code></a></b> 为 <code>dict</code> 和其他一些类提供了最基本的接口<br><img src="https://zranbo.oss-cn-beijing.aliyuncs.com/blog/dict-uml.png" alt></p>
-<p><b>可散列类型</b></p>
-<ul>
-<li><code>str</code> <code>bytes</code> <code>frozenset</code>只能容纳可散列对象，<code>tuple</code> 只有当其中的所有元素都是可散列类型时，它才是可散列的。</li>
-<li>如果一个对象是可散列的，那么在它的生命周期内散列值不变。与此同时，该对象还需要实现 <code>__hash__()</code> 方法，并且如果需要和其他的对象散列值相比，就必须再实现 <code>__eq__()</code> (参见 <b><a href="https://docs.python.org/3/glossary.html#term-hashable" target="_blank" rel="noopener"><code>hashable</code></a></b>)</li>
-<li>自定义类型的对象默认都是可散列的, (参见 <b><a href="https://docs.python.org/3/reference/datamodel.html#object.__hash__" target="_blank" rel="noopener"><code>__hash__()</code></a></b>)。如果一个对象实现了 <code>__eq__()</code> 方法，并且在方法中用到了这个对象的内部状态的话，那么只有当所有这些内部状态都是不可变的情况下，这个对象才是可散列的。没有实现 <code>__eq__()</code> 方法时，自定义对象是可散列的，否则之后在保持 <code>__eq__()</code> 使用的内部状态不可变，才可散列。</li>
-</ul>
-<p>eg.<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">TestObject</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, n)</span>:</span></span><br><span class="line">        self.n = n</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__repr__</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="keyword">return</span> str(self.n)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">s = set()</span><br><span class="line"></span><br><span class="line">t1 = TestObject(<span class="number">1</span>)</span><br><span class="line">t2 = TestObject(<span class="number">2</span>)</span><br><span class="line"></span><br><span class="line">s.add(t1)</span><br><span class="line">s.add(t2)</span><br><span class="line">print(s)</span><br></pre></td></tr></table></figure></p>
-<p>这里的结果是 <code>{2, 1}</code></p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">TestObject</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, n)</span>:</span></span><br><span class="line">        self.n = n</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__repr__</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="keyword">return</span> str(self.n)</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__eq__</span><span class="params">(self, obj)</span>:</span></span><br><span class="line">        <span class="keyword">return</span> hash(self) == hash(obj)</span><br><span class="line"></span><br><span class="line">s = set()</span><br><span class="line"></span><br><span class="line">t1 = TestObject(<span class="number">1</span>)</span><br><span class="line">t2 = TestObject(<span class="number">2</span>)</span><br><span class="line"></span><br><span class="line">s.add(t1)</span><br><span class="line">s.add(t2)</span><br><span class="line">print(s)</span><br></pre></td></tr></table></figure>
-<p>我们只添加一个 <code>__eq__()</code> 的方法之后这段代码会报错，原因是在实现了 <code>__eq__()</code> 而没有实现<code>__hash__()</code> 的时候，默认 <code>__hash__()</code> 方法将设为 <code>None</code> 所以此时的错误为 <code>TypeError: unhashable type: &#39;TestObject&#39;</code> </p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">TestObject</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, n)</span>:</span></span><br><span class="line">        self.n = n</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__repr__</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="keyword">return</span> str(self.n)</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__eq__</span><span class="params">(self, obj)</span>:</span></span><br><span class="line">        <span class="keyword">return</span> hash(self) == hash(obj)</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__hash__</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span></span><br><span class="line"></span><br><span class="line">s = set()</span><br><span class="line"></span><br><span class="line">t1 = TestObject(<span class="number">1</span>)</span><br><span class="line">t2 = TestObject(<span class="number">2</span>)</span><br><span class="line"></span><br><span class="line">s.add(t1)</span><br><span class="line">s.add(t2)</span><br><span class="line">print(s)</span><br></pre></td></tr></table></figure>
-<p>而在实现了 <code>__hash__()</code> 方法之后，如果我们指定一个确定的值作为所有对象的 <code>hash</code> 的结果，这时候 <code>s</code> 就只有一个元素了，因为这个此时两个对象再进行比较的时候，通过 <code>__eq__()</code> 方法，但是此时两个对象的 <code>__hash__()</code> 都返回的是 <code>1</code> 因此就判定这两个对象是同一个，所以在 <code>set</code> 中只有一个了。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">TestObject</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, n)</span>:</span></span><br><span class="line">        self.n = n</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__repr__</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="keyword">return</span> str(self.n)</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__eq__</span><span class="params">(self, obj)</span>:</span></span><br><span class="line">        <span class="keyword">return</span> hash(self) == hash(obj)</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__hash__</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="keyword">return</span> id(self)</span><br><span class="line"></span><br><span class="line">s = set()</span><br><span class="line"></span><br><span class="line">t1 = TestObject(<span class="number">1</span>)</span><br><span class="line">t2 = TestObject(<span class="number">2</span>)</span><br><span class="line"></span><br><span class="line">s.add(t1)</span><br><span class="line">s.add(t2)</span><br><span class="line">print(s)</span><br><span class="line">print(t1 <span class="keyword">is</span> t2)</span><br></pre></td></tr></table></figure>
-<p><b>字典的定义</b></p>
-<p>字典 <code>dict</code> 是一种映射类型的数据，我们可以用 <code>isinstance(obj, abc.Mapping)</code> 来判断任何一种对象是不是广义上的映射类型，这里的 <code>obj</code> 可以是内置的任何一种数据，当然也可是我们自己定义的任何一种数据。</p>
-<p><b>构造一个字典</b></p>
-<p>构造一个字典可以有很多种不同的形式<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">d = dict(a=<span class="number">1</span>, b=<span class="number">2</span>, c=<span class="number">3</span>)</span><br><span class="line">print(d)</span><br></pre></td></tr></table></figure></p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">d = &#123;<span class="string">'a'</span>: <span class="number">1</span>, <span class="string">'b'</span>: <span class="number">2</span>, <span class="string">'c'</span>: <span class="number">3</span>&#125;</span><br><span class="line">print(d)</span><br></pre></td></tr></table></figure>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">d = dict([(<span class="string">'a'</span>, <span class="number">1</span>), (<span class="string">'b'</span>, <span class="number">2</span>), (<span class="string">'c'</span>, <span class="number">3</span>)])</span><br><span class="line">print(d)</span><br></pre></td></tr></table></figure>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">d = dict(&#123;<span class="string">'a'</span>: <span class="number">1</span>, <span class="string">'b'</span>: <span class="number">2</span>, <span class="string">'c'</span>: <span class="number">3</span>&#125;)</span><br><span class="line">print(d)</span><br></pre></td></tr></table></figure>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">d = dict(zip([<span class="string">'a'</span>, <span class="string">'b'</span>, <span class="string">'c'</span>], [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]))</span><br><span class="line">print(d)</span><br></pre></td></tr></table></figure>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">data = [</span><br><span class="line">    (<span class="string">'a'</span>, <span class="number">1</span>),</span><br><span class="line">    (<span class="string">'b'</span>, <span class="number">2</span>),</span><br><span class="line">    (<span class="string">'c'</span>, <span class="number">3</span>)</span><br><span class="line">]</span><br><span class="line">d = &#123;k: v <span class="keyword">for</span> k, v <span class="keyword">in</span> data&#125;</span><br><span class="line">print(d)</span><br></pre></td></tr></table></figure>
-<p><b><code>collections.defaultdict</code> 和 <code>collections.OrderedDict</code></b></p>
-<p><code>collections</code> 是一个数据类型容器模块。<br>有关 <a href="https://docs.python.org/3.7/library/collections.html#collections.defaultdict" target="_blank" rel="noopener"><code>defaultdict</code></a> 和 <a href="https://docs.python.org/3.7/library/collections.html#collections.OrderedDict" target="_blank" rel="noopener"><code>OrderedDict</code></a> 的介绍和草看使用可以参阅文档。</p>
-<p><b><code>dict</code> <code>defaultdict</code> 和 <code>OrderedDict</code> 对比</b></p>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">方法名</th>
-<th style="text-align:center">说明</th>
-<th style="text-align:center">dict</th>
-<th style="text-align:center">defaultdict</th>
-<th style="text-align:center">OrderedDict</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center"><code>d.__contains__(k)</code></td>
-<td style="text-align:center"><code>k in d</code></td>
-<td style="text-align:center">✓</td>
-<td style="text-align:center">✓</td>
-<td style="text-align:center">✓</td>
-</tr>
-<tr>
-<td style="text-align:center"><code>d.__copy__()</code></td>
-<td style="text-align:center"><code>copy.copy(d)</code></td>
-<td style="text-align:center">✗</td>
-<td style="text-align:center">✓</td>
-<td style="text-align:center">✗</td>
-</tr>
-<tr>
-<td style="text-align:center"><code>d.__len__()</code></td>
-<td style="text-align:center"><code>len(d)</code></td>
-<td style="text-align:center">✓</td>
-<td style="text-align:center">✓</td>
-<td style="text-align:center">✓</td>
-</tr>
-<tr>
-<td style="text-align:center"><code>d.__setitem__(k, v)</code></td>
-<td style="text-align:center"><code>d[k] = v</code></td>
-<td style="text-align:center">✓</td>
-<td style="text-align:center">✓</td>
-<td style="text-align:center">✓</td>
-</tr>
-<tr>
-<td style="text-align:center"><code>d.__getitem__(k)</code></td>
-<td style="text-align:center"><code>v = d[k]</code></td>
-<td style="text-align:center">✓</td>
-<td style="text-align:center">✓</td>
-<td style="text-align:center">✓</td>
-</tr>
-<tr>
-<td style="text-align:center"><code>d.__delitem__(k)</code></td>
-<td style="text-align:center"><code>del d[k]</code></td>
-<td style="text-align:center">✓</td>
-<td style="text-align:center">✓</td>
-<td style="text-align:center">✓</td>
-</tr>
-<tr>
-<td style="text-align:center"><code>d.__iter__()</code></td>
-<td style="text-align:center"><code>key</code>的迭代器</td>
-<td style="text-align:center">✓</td>
-<td style="text-align:center">✓</td>
-<td style="text-align:center">✓</td>
-</tr>
-<tr>
-<td style="text-align:center"><code>d.keys()</code></td>
-<td style="text-align:center">获取所有<code>key</code></td>
-<td style="text-align:center">✓</td>
-<td style="text-align:center">✓</td>
-<td style="text-align:center">✓</td>
-</tr>
-<tr>
-<td style="text-align:center"><code>d.values()</code></td>
-<td style="text-align:center">获取所有<code>value</code></td>
-<td style="text-align:center">✓</td>
-<td style="text-align:center">✓</td>
-<td style="text-align:center">✓</td>
-</tr>
-<tr>
-<td style="text-align:center"><code>d.copy()</code></td>
-<td style="text-align:center">浅拷贝</td>
-<td style="text-align:center">✓</td>
-<td style="text-align:center">✓</td>
-<td style="text-align:center">✓</td>
-</tr>
-<tr>
-<td style="text-align:center"><code>d.clear()</code></td>
-<td style="text-align:center">清空所有数据</td>
-<td style="text-align:center">✓</td>
-<td style="text-align:center">✓</td>
-<td style="text-align:center">✓</td>
-</tr>
-<tr>
-<td style="text-align:center"><code>d.update(m, [**kargs])</code></td>
-<td style="text-align:center"><code>m</code> 是映射或者键值对迭代器，更新 <code>d</code> 里对应的条目</td>
-<td style="text-align:center">✓</td>
-<td style="text-align:center">✓</td>
-<td style="text-align:center">✓</td>
-</tr>
-<tr>
-<td style="text-align:center"><code>d.fromkeys(it, [initial])</code></td>
-<td style="text-align:center">迭代器 <code>it</code> 里的元素设置为映射里的 <code>key</code>，可选 <code>initial</code> 参数，作为这些键对应的值(默认 <code>None</code>)</td>
-<td style="text-align:center">✓</td>
-<td style="text-align:center">✓</td>
-<td style="text-align:center">✓</td>
-</tr>
-<tr>
-<td style="text-align:center"><code>d.setdefault(k, [default])</code></td>
-<td style="text-align:center">如果有键 <code>k</code>，把它的值设置为 <code>default</code> ，否则 <code>d[k] = default</code>，返回 <code>default</code></td>
-<td style="text-align:center">✓</td>
-<td style="text-align:center">✓</td>
-<td style="text-align:center">✓</td>
-</tr>
-<tr>
-<td style="text-align:center"><code>d.get(k, [default])</code></td>
-<td style="text-align:center">返回 <code>k</code> 对应的值，如果没有 <code>k</code>，则返回 <code>default</code></td>
-<td style="text-align:center">✓</td>
-<td style="text-align:center">✓</td>
-<td style="text-align:center">✓</td>
-</tr>
-<tr>
-<td style="text-align:center"><code>d.pop(k, [defaul]</code></td>
-<td style="text-align:center">返回 <code>k</code> 所应的值，弹出这个<code>k-v</code>。如果没有这个<code>k</code>，返回 <code>defaul</code></td>
-<td style="text-align:center">✓</td>
-<td style="text-align:center">✓</td>
-<td style="text-align:center">✓</td>
-</tr>
-<tr>
-<td style="text-align:center"><code>d.items()</code></td>
-<td style="text-align:center">返回 <code>d</code> 里所有的 <code>k-v</code></td>
-<td style="text-align:center">✓</td>
-<td style="text-align:center">✓</td>
-<td style="text-align:center">✓</td>
-</tr>
-<tr>
-<td style="text-align:center"><code>d.popitem()</code></td>
-<td style="text-align:center">随机弹出一个 <code>k-v</code> 对。会移除字典里最先插入的元素(FIFO)；可选 <code>last</code> 参数为<code>True</code>，弹出最后插入的元素(LIFO)。</td>
-<td style="text-align:center">✓</td>
-<td style="text-align:center">✓</td>
-<td style="text-align:center">✓</td>
-</tr>
-<tr>
-<td style="text-align:center"><code>d.__missing__(k)</code></td>
-<td style="text-align:center">当 <code>__getitem__</code> 找不到对应 <code>k</code> 的时候会被调用</td>
-<td style="text-align:center">✗</td>
-<td style="text-align:center">✓</td>
-<td style="text-align:center">✗</td>
-</tr>
-<tr>
-<td style="text-align:center"><code>d.default_factory</code></td>
-<td style="text-align:center">在 <code>__missing__</code> 函数中用以给未找到的元素设置值</td>
-<td style="text-align:center">✗</td>
-<td style="text-align:center">✓</td>
-<td style="text-align:center">✗</td>
-</tr>
-<tr>
-<td style="text-align:center"><code>d.move_to_end(k, [last])</code></td>
-<td style="text-align:center">把 <code>k</code> 的元素移动到最前或最后(<code>last</code> 默认 <code>True</code>)</td>
-<td style="text-align:center">✗</td>
-<td style="text-align:center">✗</td>
-<td style="text-align:center">✓</td>
-</tr>
-<tr>
-<td style="text-align:center"><code>d.__reversed__()</code></td>
-<td style="text-align:center">返回倒序的 <code>key</code> 的迭代器</td>
-<td style="text-align:center">✗</td>
-<td style="text-align:center">✗</td>
-<td style="text-align:center">✓</td>
-</tr>
-</tbody>
-</table>
-<p><b>集合 <code>set</code> </b></p>
-<p><img src="https://zranbo.oss-cn-beijing.aliyuncs.com/blog/set-uml.png" alt></p>
-<p>集合是许多唯一对象的聚合。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">l = [<span class="string">'spam'</span>, <span class="string">'spam'</span>, <span class="string">'eggs'</span>, <span class="string">'spam'</span>]</span><br><span class="line">s = set(l)</span><br><span class="line">print(list(s))</span><br></pre></td></tr></table></figure></p>
-<p>集合中的元素必须是可散列的，<code>set</code> 类型本身是不可散列的，但是 <code>frozenset</code> 可以。所以可以创建一个包含不同 <code>frozenset</code> 的 <code>set</code>。</p>
+        <p><b>Supervisor</b></p>
+<p><a href="http://supervisord.org/" target="_blank" rel="noopener"><code>Supervisor</code></a> 是一个用 <code>Python2</code> 实现的 Unix-like 系统进程管理工具。</p>
+<p><b>安装</b></p>
+<ol>
+<li>Ubuntu : <code>apt install supervisor</code></li>
+<li>其他 Linux 发行版: <code>pip install supervisor</code> (只支持 <code>Python2</code> 因此请确定是<code>Python2</code>的<code>pip</code>)</li>
+</ol>
+<p>安装完成后会生成三个执行程序：<code>supervisortd</code> <code>supervisorctl</code> <code>echo_supervisord_conf</code> 分别是：守护进程服务、客户端、初始配置文件程序。</p>
+<p><b>配置</b></p>
+<p>运行 <code>supervisord</code> 要指定 <code>supervisor</code> 配置文件,默认在以下目录查找：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/etc/supervisor/supervisord.conf</span><br></pre></td></tr></table></figure></p>
+<p>并且可以通过 <code>echo_supervisord_conf</code> 生成一份 <code>supervisor</code> 配置文件<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo_supervisord_conf &gt; /etc/supervisor/supervisord.conf</span><br></pre></td></tr></table></figure></p>
+<p><b>主程序配置文件说明</b></p>
+<p>注释：以分号 <code>;</code> 开头的表示注释行<br><figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">[unix_http_server]</span></span><br><span class="line"><span class="attr">file</span>=/tmp/supervisor.sock		; UNIX socket 文件，supervisorctl要用</span><br><span class="line"><span class="comment">;chmod=0700				; socket文件的权限，默认是0700</span></span><br><span class="line"><span class="comment">;chown=nobody:nogroup			; socket文件的 owner，格式：uid:gid</span></span><br><span class="line"><span class="comment">;username=user				; 登录管理后台的用户名</span></span><br><span class="line"><span class="comment">;password=123				; 登录管理后台的密码</span></span><br><span class="line"></span><br><span class="line"><span class="section">[inet_http_server]</span>			<span class="comment">; HTTP服务，提供Web端管理界面</span></span><br><span class="line"><span class="attr">port</span>=<span class="number">127.0</span>.<span class="number">0.1</span>:<span class="number">9001</span>			; Web管理后台运行的IP和端口</span><br><span class="line"><span class="attr">username</span>=user				; 登录管理后台的用户名</span><br><span class="line"><span class="attr">password</span>=<span class="number">123</span>				; 登录管理后台的密码</span><br><span class="line"></span><br><span class="line"><span class="section">[supervisord]</span></span><br><span class="line"><span class="attr">logfile</span>=/tmp/supervisord.log 		; 主程序的日志文件</span><br><span class="line"><span class="attr">logfile_maxbytes</span>=<span class="number">50</span>MB        		; 主程序日志大小，默认 <span class="number">50</span>MB，<span class="number">0</span>，表示不限制</span><br><span class="line"><span class="attr">logfile_backups</span>=<span class="number">10</span>           		; 主程序日志备份数量，默认<span class="number">10</span>，<span class="number">0</span>，表示不备份</span><br><span class="line"><span class="attr">loglevel</span>=info                		; 主程序日志级别，默认 info，其它: debug,warn,trace</span><br><span class="line"><span class="attr">pidfile</span>=/tmp/supervisord.pid 		; supervisord pid 文件; 默认 supervisord.pid</span><br><span class="line"><span class="attr">nodaemon</span>=<span class="literal">false</span>               		; 是否在前台启动，默认是<span class="literal">false</span>，即以 daemon 的方式启动</span><br><span class="line"><span class="attr">minfds</span>=<span class="number">1024</span>                  		; 可以打开的文件描述符的最小值，默认 <span class="number">1024</span></span><br><span class="line"><span class="attr">minprocs</span>=<span class="number">200</span>                 		; 可以打开的进程数的最小值，默认 <span class="number">200</span></span><br><span class="line"><span class="comment">;umask=022                   		; umask 022 创建新文件权限为755</span></span><br><span class="line"><span class="comment">;user=chrism                 		; 启动用户，默认为当前用户</span></span><br><span class="line"><span class="comment">;identifier=supervisor       		; supervisord 标识, 默认 `supervisor`</span></span><br><span class="line"><span class="comment">;directory=/tmp              		; 当 supervisord 守护进程时，切换到此目录</span></span><br><span class="line"><span class="comment">;nocleanup=true              		; 启动时清除子日志文件，默认 false</span></span><br><span class="line"><span class="comment">;childlogdir=/tmp            		; 子日志文件路径 默认为 $TEMP</span></span><br><span class="line"><span class="comment">;environment=KEY="value"     		; 添加环境变量到 supervisord 进程的环境中</span></span><br><span class="line"><span class="comment">;strip_ansi=false            		; 删除日志文件中所有ANSI转义序列</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="section">[rpcinterface:supervisor]</span></span><br><span class="line"><span class="attr">supervisor.rpcinterface_factory</span> = supervisor.rpcinterface:make_main_rpcinterface</span><br><span class="line"></span><br><span class="line"><span class="section">[supervisorctl]</span></span><br><span class="line"><span class="attr">serverurl</span>=unix:///tmp/supervisor.sock	; 通过UNIX socket 连接supervisord，与[unix_http_server]部分file一致</span><br><span class="line"><span class="comment">;serverurl=http://127.0.0.1:9001 	; 通过 HTTP 方式连接 supervisord</span></span><br><span class="line"><span class="comment">;username=chris              		; 用于身份验证的用户名。与 supervisord 服务器配置的用户名相同</span></span><br><span class="line"><span class="comment">;password=123                		; 用于身份验证的密码。与 supervisord 服务器配置的密码的明文相同。</span></span><br><span class="line"><span class="comment">;prompt=mysupervisor         		; 用作 supervisorctl 提示符的字符串</span></span><br><span class="line"><span class="comment">;history_file=~/.sc_history  		; 用作 readline 持久性历史记录文件的路径</span></span><br><span class="line"></span><br><span class="line"><span class="section">[include]</span></span><br><span class="line"><span class="attr">files</span> = /etc/supervisor/conf.d/*.ini 	; 可以指定一个或多个以.ini结束的配置文件</span><br></pre></td></tr></table></figure></p>
+<p><b>配置管理进程</b></p>
+<p>进程管理配置参数，不建议全都写在 <code>supervisord.conf</code> 文件中，建议每个进程采用一个配置文件放到 <code>supervisord.conf</code> 配置中 <code>[include]</code>字段 <code>files</code> 指定的路径下</p>
+<figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">;[program:programname]			; program:xxx (xxx 为自定义的管理的进程的名称名称，不可重复)</span></span><br><span class="line"><span class="comment">;command=/bin/cat			; 程序启动命令 (该命令只能是前台任务命令)</span></span><br><span class="line"><span class="comment">;process_name=%(program_name)s		; 进程名称</span></span><br><span class="line"><span class="comment">;numprocs=1				; 进程数量 (默认为 1)</span></span><br><span class="line"><span class="comment">;directory=/tmp               		; 在执行 command 之前，supervisord 切换到的目录。</span></span><br><span class="line"><span class="comment">;autostart=true                		; supervisord 启动的时候也自动启动</span></span><br><span class="line"><span class="comment">;startsecs=1                   		; 启动1秒后没有异常退出，就表示进程正常启动了，默认为1秒</span></span><br><span class="line"><span class="comment">;startretries=3                		; 启动失败自动重试次数，默认是3次</span></span><br><span class="line"><span class="comment">;autorestart=unexpected        		; 程序退出后自动重启,可选值：[unexpected,true,false]，默认为unexpected，表示进程意外杀死后才重启</span></span><br><span class="line"><span class="comment">;stopasgroup=false             		; 进程被杀死时，是否向这个进程组发送stop信号，包括子进程</span></span><br><span class="line"><span class="comment">;killasgroup=false             		; 进程组发送kill信号，包括子进程</span></span><br><span class="line"><span class="comment">;user=chrism                   		; 启动进程的用户</span></span><br><span class="line"><span class="comment">;redirect_stderr=false          	; 把stderr重定向到stdout，默认false</span></span><br><span class="line"><span class="comment">;stdout_logfile=/a/path        		; stdout 日志文件路径</span></span><br><span class="line"><span class="comment">;stdout_logfile_maxbytes=1MB   		; stdout 日志文件大小 0 表示无限制</span></span><br><span class="line"><span class="comment">;stdout_logfile_backups=10     		; stdout 日志文件备份数量 0 表示不备份</span></span><br><span class="line"><span class="comment">;stdout_capture_maxbytes=1MB   		; stdout 捕获模式 日志文件大小</span></span><br><span class="line"><span class="comment">;stderr_logfile=/a/path        		; stderr 日志文件路径</span></span><br><span class="line"><span class="comment">;stderr_logfile_maxbytes=1MB   		; stderr 日志文件大小 0 表示无限制</span></span><br><span class="line"><span class="comment">;stderr_logfile_backups=10     		; stderr 日志文件备份数量 0 表示不备份</span></span><br><span class="line"><span class="comment">;stderr_capture_maxbytes=1MB   		; stderr 捕获模式 日志文件大小</span></span><br><span class="line"><span class="comment">;environment=A="1",B="2"       		; 添加环境变量到子进程的环境中</span></span><br></pre></td></tr></table></figure>
+<p><b>启动Supervisor服务</b></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">supervisord -c /etc/supervisor/supervisord.conf</span><br></pre></td></tr></table></figure>
+<p><b>supervisorctl 管理进程</b></p>
+<p>启动成功后，就可以通过 supervisorctl 管理进程。在 shell 中直接输入 <code>supervisorctl</code> 就可以直接进入交互式的环境中<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">supervisor&gt;</span><span class="bash"> status		<span class="comment"># 查看所有进程的状态</span></span></span><br><span class="line"><span class="meta">supervisor&gt;</span><span class="bash"> update		<span class="comment"># 重启配置文件修改过的程序</span></span></span><br><span class="line"><span class="meta">supervisor&gt;</span><span class="bash"> reread		<span class="comment"># 读取有更新（增加）的配置文件，不会启动新添加的程序</span></span></span><br><span class="line"><span class="meta">supervisor&gt;</span><span class="bash"> start program	<span class="comment"># 启动 program 程序</span></span></span><br><span class="line"><span class="meta">supervisor&gt;</span><span class="bash"> stop program	<span class="comment"># 停止 program 程序</span></span></span><br><span class="line"><span class="meta">supervisor&gt;</span><span class="bash"> restart program	<span class="comment"># 重启 program 程序</span></span></span><br></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -653,7 +472,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Fluent-Python/" rel="tag"># Fluent Python</a>
+            <a href="/tags/Linux/" rel="tag"># Linux</a>
           
         </div>
       
@@ -666,8 +485,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/item/b32026b8/" rel="next" title="Hexo 标签插件">
-                <i class="fa fa-chevron-left"></i> Hexo 标签插件
+              <a href="/item/d12c295b/" rel="next" title="流畅的Python - 文本和字节序列 (四)">
+                <i class="fa fa-chevron-left"></i> 流畅的Python - 文本和字节序列 (四)
               </a>
             
           </div>
@@ -675,10 +494,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/item/d12c295b/" rel="prev" title="流畅的Python - 文本和字节序列 (四)">
-                流畅的Python - 文本和字节序列 (四) <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
