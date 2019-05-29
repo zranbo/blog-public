@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="Python3">
+  <meta name="keywords" content="Hexo,">
 
 
 
@@ -88,17 +88,24 @@
 
 
 
-<meta name="description" content="chaos blog">
-<meta name="keywords" content="Python3 Tech">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Chaos">
-<meta property="og:url" content="https://www.zranbo.com/tags/Void/index.html">
+<meta name="description" content="前言 用Hexo搭建了这个博客，并且找到了一个利用 GitHub Issue 实现评论功能的插件 gitalk        从而实现了网站的评论功能。但网站的评论不同于微信等即时通讯的消息，别人的评论有可能你没法马上看到。所以有个想法：怎么样能在别人评论完之后我马上就能知道呢？ 考虑到消息推送的时效，想到了 iPhone 的消息推送。这样每当有评论留言可以很快地收到一个消息提醒自己。但 iPho">
+<meta name="keywords" content="Hexo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo-gitalk-Pushover 实现消息推送">
+<meta property="og:url" content="https://www.zranbo.com/item/609f08f9/index.html">
 <meta property="og:site_name" content="Chaos">
-<meta property="og:description" content="chaos blog">
+<meta property="og:description" content="前言 用Hexo搭建了这个博客，并且找到了一个利用 GitHub Issue 实现评论功能的插件 gitalk        从而实现了网站的评论功能。但网站的评论不同于微信等即时通讯的消息，别人的评论有可能你没法马上看到。所以有个想法：怎么样能在别人评论完之后我马上就能知道呢？ 考虑到消息推送的时效，想到了 iPhone 的消息推送。这样每当有评论留言可以很快地收到一个消息提醒自己。但 iPho">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://zranbo.oss-cn-beijing.aliyuncs.com/blog/pushover_key_demo.jpg">
+<meta property="og:image" content="https://zranbo.oss-cn-beijing.aliyuncs.com/blog/pushover_application.jpg">
+<meta property="og:image" content="https://zranbo.oss-cn-beijing.aliyuncs.com/blog/webhook_demo.jpg">
+<meta property="og:image" content="https://zranbo.oss-cn-beijing.aliyuncs.com/blog/pushover_msg_demo.jpg">
+<meta property="og:image" content="https://zranbo.oss-cn-beijing.aliyuncs.com/blog/webhook_recent.jpg">
+<meta property="og:updated_time" content="2019-05-29T04:59:35.464Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Chaos">
-<meta name="twitter:description" content="chaos blog">
+<meta name="twitter:title" content="Hexo-gitalk-Pushover 实现消息推送">
+<meta name="twitter:description" content="前言 用Hexo搭建了这个博客，并且找到了一个利用 GitHub Issue 实现评论功能的插件 gitalk        从而实现了网站的评论功能。但网站的评论不同于微信等即时通讯的消息，别人的评论有可能你没法马上看到。所以有个想法：怎么样能在别人评论完之后我马上就能知道呢？ 考虑到消息推送的时效，想到了 iPhone 的消息推送。这样每当有评论留言可以很快地收到一个消息提醒自己。但 iPho">
+<meta name="twitter:image" content="https://zranbo.oss-cn-beijing.aliyuncs.com/blog/pushover_key_demo.jpg">
 
 
 
@@ -128,13 +135,13 @@
 
 
 
-  <link rel="canonical" href="https://www.zranbo.com/tags/Void/">
+  <link rel="canonical" href="https://www.zranbo.com/item/609f08f9/">
 
 
 
 
 
-  <title>标签: Void | Chaos</title>
+  <title>Hexo-gitalk-Pushover 实现消息推送 | Chaos</title>
   
 
 
@@ -162,7 +169,7 @@
     
   
 
-  <div class="container sidebar-position-right ">
+  <div class="container sidebar-position-right page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -298,52 +305,232 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block tag">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>Void<small>标签</small>
-        </h1>
-      </div>
+  
 
-      
-        
+  
+  
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://www.zranbo.com/item/609f08f9/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="zranbo">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chaos">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/item/4a17b156/" itemprop="url">
-              
-                <span itemprop="name">Hello World</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">Hexo-gitalk-Pushover 实现消息推送</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-05-05T17:52:00+08:00" content="2019-05-05">
-          05-05
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-05-28T23:10:00+08:00">
+                2019-05-28
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  797
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  3
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><b>前言</b></p>
+<p>用Hexo搭建了这个博客，并且找到了一个利用 GitHub Issue 实现评论功能的插件 gitalk</p>
+<div style="text-align:center">
+  <div class="github-card" data-user="gitalk" data-repo="gitalk" data-width="100%" data-theme="default" data-target="blank" data-client-id data-client-secret></div>
+</div>
+<script src="/github-card-lib/githubcard.js"></script>
+
+<p>从而实现了网站的评论功能。但网站的评论不同于微信等即时通讯的消息，别人的评论有可能你没法马上看到。所以有个想法：怎么样能在别人评论完之后我马上就能知道呢？</p>
+<p>考虑到消息推送的时效，想到了 iPhone 的消息推送。这样每当有评论留言可以很快地收到一个消息提醒自己。但 iPhone 的消息推送还是很复杂的，首先要有一个上架 AppStore 的应用。但幸好已经有了这样的应用，这里我就用了 <a href="https://itunes.apple.com/cn/app/pushover-notifications/id506088175" target="_blank" rel="noopener">Pushover</a> 替我进行消息的推送。</p>
+<p><b>配置Pushover</b></p>
+<p>AppStore 上的 Pushover 是付费应用，价格 ¥30.00</p>
+<p>购买后可以申请一个账户，然后注册该设备，之后你会得到一个<code>User Key</code><br><img src="https://zranbo.oss-cn-beijing.aliyuncs.com/blog/pushover_key_demo.jpg" alt></p>
+<p>然后从浏览器进入 Pushover 界面 <a href="https://pushover.net" target="_blank">https://pushover.net</a> 从右上角登录刚刚注册的账户</p>
+<p>如果之前的都已经做了，那么在 Your Devices 部分应该可以看到你刚刚的设备了。</p>
+<p>在底下 Your Applications 创建一个应用<br><img src="https://zranbo.oss-cn-beijing.aliyuncs.com/blog/pushover_application.jpg" alt></p>
+<p>填写好这些信息后，你会获得一个 <code>API Token</code> 至此有关 Pushover 的配置就完成了，有了上面的 <code>User Key</code> 和刚刚拿到的 <code>API Token</code> 我们就能自定义的给刚刚注册的手机发送推送通知了。</p>
+<p><b>Push Demo</b></p>
+<p>首先我们先试一下这个消息推送</p>
+<p>消息推送采用的是 Restapi 风格的接口。地址是 <a href="https://api.pushover.net/1/messages.json" target="_blank">https://api.pushover.net/1/messages.json</a></p>
+<p>具体的接口文档参阅 <a href="https://pushover.net/api" target="_blank" rel="noopener">Pushover Message API</a></p>
+<p>如何做到评论之后马上就能推送消息呢？这里我们用 GitHub 的 Webhook ，当有新的评论的时候，就触发这个 Webhook 。我们要做的就只需要找一台拥有公网 ip 的服务器主机，搭建一个简单的 Web 服务。</p>
+<p>tool.py<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">PushOver</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, token, user)</span>:</span></span><br><span class="line">        self.api = <span class="string">"https://api.pushover.net/1/messages.json"</span></span><br><span class="line"></span><br><span class="line">        self.rdata = &#123;</span><br><span class="line">            <span class="string">"token"</span>: token,</span><br><span class="line">            <span class="string">"user"</span>: user,</span><br><span class="line">            <span class="string">"message"</span>: <span class="string">""</span>,</span><br><span class="line">            <span class="string">"url"</span>: <span class="string">""</span></span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">loads</span><span class="params">(self, dictdata)</span>:</span></span><br><span class="line">        title = dictdata[<span class="string">'issue'</span>][<span class="string">'title'</span>]</span><br><span class="line">        user = dictdata[<span class="string">'comment'</span>][<span class="string">'user'</span>][<span class="string">'login'</span>]</span><br><span class="line">        comment = dictdata[<span class="string">'comment'</span>][<span class="string">'body'</span>]</span><br><span class="line">        url = dictdata[<span class="string">'issue'</span>][<span class="string">'body'</span>].split(<span class="string">' '</span>)[<span class="number">0</span>]</span><br><span class="line"></span><br><span class="line">        msg = <span class="string">"&#123;t&#125;\n&#123;u&#125;:&#123;c&#125;"</span>.format(t=title, u=user, c=comment)</span><br><span class="line"></span><br><span class="line">        self.rdata[<span class="string">'message'</span>] = msg</span><br><span class="line">        self.rdata[<span class="string">'url'</span>] = url</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">send</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="keyword">try</span>:</span><br><span class="line">            <span class="comment"># print(self.rdata)</span></span><br><span class="line">            requests.post(self.api, data=self.rdata)</span><br><span class="line">        <span class="keyword">except</span> Exception <span class="keyword">as</span> e:</span><br><span class="line">            <span class="keyword">raise</span> e</span><br><span class="line"></span><br><span class="line">pushover = PushOver([:API Token], [:User Key])</span><br></pre></td></tr></table></figure></p>
+<p>pushover.py<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> json</span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> flask <span class="keyword">import</span> Flask, jsonify, redirect, request</span><br><span class="line"><span class="keyword">from</span> tool <span class="keyword">import</span> pushover</span><br><span class="line"></span><br><span class="line">app = Flask(__name__)</span><br><span class="line"></span><br><span class="line"><span class="meta">@app.route('/webhook', methods=['POST'])</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">webhook</span><span class="params">()</span>:</span></span><br><span class="line">    req = json.loads(request.data)</span><br><span class="line">    action = req[<span class="string">'action'</span>]</span><br><span class="line">    <span class="keyword">if</span> action == <span class="string">'created'</span>:</span><br><span class="line">        pushover.loads(req)</span><br><span class="line">        <span class="keyword">try</span>:</span><br><span class="line">            pushover.send()</span><br><span class="line">            <span class="keyword">return</span> <span class="string">'OK'</span></span><br><span class="line">        <span class="keyword">except</span> Exception:</span><br><span class="line">            <span class="keyword">return</span> <span class="string">'ERROR'</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="string">'PASS'</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    app.run(host=<span class="string">'0.0.0.0'</span>, port=<span class="number">80</span>)</span><br></pre></td></tr></table></figure></p>
+<p>将这两个脚本放到服务器上，安装 gunicorn 启动脚本运行 Web 服务</p>
+<p><code>gunicorn -w 4 -b 0.0.0.0:80 webhook:app</code></p>
+<p><b>配置 Webhook</b></p>
+<p>打开 gitalk 配置的评论仓库，在 Webhooks 设置中添加一个 webhook</p>
+<p><img src="https://zranbo.oss-cn-beijing.aliyuncs.com/blog/webhook_demo.jpg" alt></p>
+<p>Payload URL 中填写 <code>http://ip:port/webhook</code> 如果你的服务器提供商允许使用 <code>80</code> 端口可以不写 <code>:80</code><br>保存之后就可以试一下评论看有没有消息推送。</p>
+<p><img src="https://zranbo.oss-cn-beijing.aliyuncs.com/blog/pushover_msg_demo.jpg" alt></p>
+<p>如果没有，可以在 Github Webhook 页面看到调用 wenhook 的记录，排查错误。<br><img src="https://zranbo.oss-cn-beijing.aliyuncs.com/blog/webhook_recent.jpg" alt></p>
 
       
     </div>
+    
+    
+    
 
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>我知道不会有人点的，但是万一有人想不开呢</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="https://zranbo.oss-cn-beijing.aliyuncs.com/blog/wechat.jpg" alt="zranbo 微信支付">
+        <p>微信支付</p>
+      </div>
+    
+
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Hexo/" rel="tag"># Hexo</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/item/1f6c73c0/" rel="next" title="Linux/Unix进程管理工具 - Supervisor">
+                <i class="fa fa-chevron-left"></i> Linux/Unix进程管理工具 - Supervisor
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -351,6 +538,12 @@
 
 
           
+
+  
+    <div id="gitalk-container"></div>
+  
+
+
 
         </div>
         
@@ -589,6 +782,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
@@ -629,6 +826,30 @@
 
 
 
+
+
+  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+
+  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+  <script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.js"></script>
+
+   <script type="text/javascript">
+        var gitalk = new Gitalk({
+          clientID: '59d7d4312cf2afa209e6',
+          clientSecret: 'eec2ddb55075d517378a484baebb317eff5eee89',
+          repo: 'blog_comment',
+          owner: 'zranbo',
+          admin: ['zranbo'],
+          id: md5(location.pathname),
+          labels: 'comments'.split(',').filter(l => l),
+          perPage: 50,
+          pagerDirection: 'last',
+          createIssueManually: true,
+          distractionFreeMode: false
+        })
+        gitalk.render('gitalk-container')           
+       </script>
 
   
 
