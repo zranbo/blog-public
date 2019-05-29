@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="Fluent Python,">
+  <meta name="keywords" content="Docker,">
 
 
 
@@ -88,18 +88,20 @@
 
 
 
-<meta name="description" content="Magic Method (Dunder Method) Python 里面有很多特殊方法，我们管他叫魔术方法(magic method)。之所以特殊，是因为这些方法不同于一般的对象方法的调用方式 Object.function，比如对于获取字符串对象 s = &amp;quot;Hello&amp;quot; 的长度,不同于其他一些语言的 s.length() 或者类似的方法，Python采用 len(s) 这">
-<meta name="keywords" content="Fluent Python">
+<meta name="description" content="什么是Docker?  以上图片摘自 https://www.docker.com/  Docker 是一个基于 Go 语言的开源容器引擎。Docker 可以让开发者打包他们的应用以及依赖包到一个轻量级、可移植的容器中，然后发布到任何流行的 Linux 机器上，也可以实现虚拟化。并且容器的使用开销极低，启动速度也非常快。 安装 Docker Docker 有两个版本：社区版(Community E">
+<meta name="keywords" content="Docker">
 <meta property="og:type" content="article">
-<meta property="og:title" content="流畅的Python - Python数据模型 (一)">
-<meta property="og:url" content="https://www.zranbo.com/item/1bbbb445/index.html">
+<meta property="og:title" content="Docker从入门到再入门 - 初识 (一)">
+<meta property="og:url" content="https://www.zranbo.com/item/f79e33ca/index.html">
 <meta property="og:site_name" content="Chaos">
-<meta property="og:description" content="Magic Method (Dunder Method) Python 里面有很多特殊方法，我们管他叫魔术方法(magic method)。之所以特殊，是因为这些方法不同于一般的对象方法的调用方式 Object.function，比如对于获取字符串对象 s = &amp;quot;Hello&amp;quot; 的长度,不同于其他一些语言的 s.length() 或者类似的方法，Python采用 len(s) 这">
+<meta property="og:description" content="什么是Docker?  以上图片摘自 https://www.docker.com/  Docker 是一个基于 Go 语言的开源容器引擎。Docker 可以让开发者打包他们的应用以及依赖包到一个轻量级、可移植的容器中，然后发布到任何流行的 Linux 机器上，也可以实现虚拟化。并且容器的使用开销极低，启动速度也非常快。 安装 Docker Docker 有两个版本：社区版(Community E">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-05-17T14:59:19.076Z">
+<meta property="og:image" content="https://zranbo.oss-cn-beijing.aliyuncs.com/blog/docker_intr.jpg">
+<meta property="og:updated_time" content="2019-05-29T13:22:05.693Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="流畅的Python - Python数据模型 (一)">
-<meta name="twitter:description" content="Magic Method (Dunder Method) Python 里面有很多特殊方法，我们管他叫魔术方法(magic method)。之所以特殊，是因为这些方法不同于一般的对象方法的调用方式 Object.function，比如对于获取字符串对象 s = &amp;quot;Hello&amp;quot; 的长度,不同于其他一些语言的 s.length() 或者类似的方法，Python采用 len(s) 这">
+<meta name="twitter:title" content="Docker从入门到再入门 - 初识 (一)">
+<meta name="twitter:description" content="什么是Docker?  以上图片摘自 https://www.docker.com/  Docker 是一个基于 Go 语言的开源容器引擎。Docker 可以让开发者打包他们的应用以及依赖包到一个轻量级、可移植的容器中，然后发布到任何流行的 Linux 机器上，也可以实现虚拟化。并且容器的使用开销极低，启动速度也非常快。 安装 Docker Docker 有两个版本：社区版(Community E">
+<meta name="twitter:image" content="https://zranbo.oss-cn-beijing.aliyuncs.com/blog/docker_intr.jpg">
 
 
 
@@ -129,13 +131,13 @@
 
 
 
-  <link rel="canonical" href="https://www.zranbo.com/item/1bbbb445/">
+  <link rel="canonical" href="https://www.zranbo.com/item/f79e33ca/">
 
 
 
 
 
-  <title>流畅的Python - Python数据模型 (一) | Chaos</title>
+  <title>Docker从入门到再入门 - 初识 (一) | Chaos</title>
   
 
 
@@ -313,7 +315,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://www.zranbo.com/item/1bbbb445/">
+    <link itemprop="mainEntityOfPage" href="https://www.zranbo.com/item/f79e33ca/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="zranbo">
@@ -330,7 +332,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">流畅的Python - Python数据模型 (一)</h1>
+          <h1 class="post-title" itemprop="name headline">Docker从入门到再入门 - 初识 (一)</h1>
         
 
         <div class="post-meta">
@@ -342,8 +344,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-05-14T14:03:00+08:00">
-                2019-05-14
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-05-29T20:27:00+08:00">
+                2019-05-29
               </time>
             
 
@@ -374,7 +376,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  776
+                  1.3k
                 </span>
               
 
@@ -390,7 +392,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  3
+                  4
                 </span>
               
             </div>
@@ -411,89 +413,39 @@
       
 
       
-        <p><b>Magic Method (Dunder Method)</b></p>
-<div class="note info"><p>Python 里面有很多特殊方法，我们管他叫魔术方法(magic method)。之所以特殊，是因为这些方法不同于一般的对象方法的调用方式 <code>Object.function</code>，比如对于获取字符串对象 <code>s = &quot;Hello&quot;</code> 的长度,不同于其他一些语言的 <code>s.length()</code> 或者类似的方法，Python采用 <code>len(s)</code> 这样的形式。 </p></div>
-<blockquote><p>首先明确一点，特殊方法的存在是为了被 Python 解释器调用的，你自己并不需要调用它们。也就是说没有 <code>my_object.__len__()</code> 这种写法，而应该使用 <code>len(my_object</code>)。在执行 <code>len(my_object)</code> 的时候，如果 <code>my_object</code> 是一个自定义类的对象，那么 Python 会自己去调用其中由你实现的 <code>__len__</code> 方法。</p>
-<footer><strong>——Fluent Python</strong></footer></blockquote>
-<p>而 Python 里面这样的特殊方法还有很多，列一个表格说明一些。</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">类别</th>
-<th style="text-align:left">方法名</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">字符串/字节序列表示形式</td>
-<td style="text-align:left"><code>__repr__</code>、<code>__str__</code>、<code>__format__</code>、<code>__bytes__</code></td>
-</tr>
-<tr>
-<td style="text-align:center">数值转换</td>
-<td style="text-align:left"><code>__abs__</code>、<code>__bool__</code>、<code>__complex__</code>、<code>__int__</code>、<code>__float__</code>、<code>__hash__</code>、<code>__index__</code></td>
-</tr>
-<tr>
-<td style="text-align:center">集合模拟</td>
-<td style="text-align:left"><code>__len__</code>、<code>__getitem__</code>、<code>__setitem__</code>、<code>__delitem__</code>、<code>__contains__</code></td>
-</tr>
-<tr>
-<td style="text-align:center">迭代枚举</td>
-<td style="text-align:left"><code>__iter__</code>、<code>__reversed__</code>、<code>__next__</code></td>
-</tr>
-<tr>
-<td style="text-align:center">可调用模拟</td>
-<td style="text-align:left"><code>__call__</code></td>
-</tr>
-<tr>
-<td style="text-align:center">上下文管理</td>
-<td style="text-align:left"><code>__enter__</code>、<code>__exit__</code></td>
-</tr>
-<tr>
-<td style="text-align:center">实例创建和销毁</td>
-<td style="text-align:left"><code>__new__</code>、<code>__init__</code>、<code>__del__</code></td>
-</tr>
-<tr>
-<td style="text-align:center">属性管理</td>
-<td style="text-align:left"><code>__getattr__</code>、<code>__getattribute__</code>、<code>__setattr__</code>、<code>__delattr__</code>、<code>__dir__</code></td>
-</tr>
-<tr>
-<td style="text-align:center">属性描述符</td>
-<td style="text-align:left"><code>__get__</code>、<code>__set__</code>、<code>__delete__</code></td>
-</tr>
-<tr>
-<td style="text-align:center">类相关服务</td>
-<td style="text-align:left"><code>__prepare__</code>、<code>__instancecheck__</code>、<code>__subclasscheck__</code></td>
-</tr>
-</tbody>
-</table>
-<p>上面表格里面列举的并不是所有的，还有很多比如与运算相关的特殊方法 <code>__add__</code> 、 <code>__abs__</code> 等都没有列举。</p>
-<p><b>一些常用操作对应的魔术方法</b></p>
+        <p><b>什么是Docker?</b></p>
+<p><img src="https://zranbo.oss-cn-beijing.aliyuncs.com/blog/docker_intr.jpg" alt></p>
+<p>以上图片摘自 <a href="https://www.docker.com/" target="_blank" rel="noopener">https://www.docker.com/</a> </p>
+<p><code>Docker</code> 是一个基于 <code>Go</code> 语言的开源容器引擎。<code>Docker</code> 可以让开发者打包他们的应用以及依赖包到一个轻量级、可移植的容器中，然后发布到任何流行的 <code>Linux</code> 机器上，也可以实现虚拟化。并且容器的使用开销极低，启动速度也非常快。</p>
+<p><b>安装 Docker</b></p>
+<p><code>Docker</code> 有两个版本：社区版(Community Edition，缩写 CE)和企业版（Enterprise Edition，缩写 EE）一般个人安装 CE 版本</p>
+<p>Docker CE 的安装参考官方文档：</p>
 <ul>
-<li><p><code>for</code> 迭代操作</p>
-<p>如果一个对象可以通过 <code>for</code> 循环，需要实现 <code>__iter__()</code> 和 <code>__next__()</code> 方法，并且需要在 <code>__next__()</code> 中通过抛出 <code>StopIteration</code> 异常来控制 <code>for</code> 的终止行为:</p>
-</li>
+<li><a href="https://docs.docker.com/install/linux/docker-ce/ubuntu/" target="_blank" rel="noopener">Ubuntu</a></li>
+<li><a href="https://docs.docker.com/docker-for-mac/install/" target="_blank" rel="noopener">Mac</a></li>
+<li><a href="https://docs.docker.com/docker-for-windows/install/" target="_blank" rel="noopener">Windows</a></li>
 </ul>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">tObject</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, init=<span class="number">0</span>, stop=<span class="number">10</span>)</span>:</span></span><br><span class="line">        self.init = init</span><br><span class="line">        self.data = init</span><br><span class="line">        self.stop = stop</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__iter__</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="keyword">return</span> self</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__next__</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="keyword">if</span> self.data &gt;= self.stop:</span><br><span class="line">            <span class="keyword">raise</span> StopIteration</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            self.data += <span class="number">1</span></span><br><span class="line">            <span class="keyword">return</span> self.data</span><br><span class="line">            </span><br><span class="line">obj = tObject()</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> obj:</span><br><span class="line">    print(i)</span><br></pre></td></tr></table></figure>
-<ul>
-<li><p><code>in</code> 操作</p>
-<p>用 <code>in</code> 判断对象关系的时候，需要实现 <code>__contains__()</code>，但是如果没有实现 <code>__contains__()</code> ，会进行一次迭代操作：</p>
+<p>安装完成后，可以通过 <code>docker --version</code> 验证版本</p>
+<div class="note danger"><p>Linux 安装完成后如果是非 <code>root</code> 用户输入 <code>docker</code> 会提示出错: <code>permission denied</code><br>解决办法是将当前用户加入 <code>docker</code> 用户组<br><code>sudo usermod -a -G docker $USER</code> 并重新启动系统<br>利用 <code>groups</code> 查看 <code>docker</code> 是否在其中</p></div>
+<p><b>几个概念</b></p>
+<ol>
+<li><h6 id="镜像-Image"><a href="#镜像-Image" class="headerlink" title="镜像 (Image)"></a>镜像 (<code>Image</code>)</h6><p>首先操作系统分为内核和用户空间。对于 <code>Linux</code> 而言，内核启动后，会挂载 <code>root</code> 文件系统为其提供用户空间支 持。而 <code>Docker</code> 镜像（<code>Image</code>），就相当于是一个 <code>root</code> 文件系统。比如官方镜像 <code>ubuntu:18.04</code> 就包含了完整的一套 <code>Ubuntu 18.04</code> 最小系统的 <code>root</code> 文件系统。</p>
+<p><code>Docker</code> 镜像是一个特殊的文件系统，除了提供容器运行时所需的程序、库、资源、配置等文件外，还包含了一些为运行时准备的一些配置参数（如匿名卷、环境变量、用户等）。镜像不包含任何动态数据，其内容在构建之后也不会被改变。</p>
 </li>
-</ul>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">tObject</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, init=<span class="number">0</span>, stop=<span class="number">10</span>)</span>:</span></span><br><span class="line">        self.init = init</span><br><span class="line">        self.data = init</span><br><span class="line">        self.stop = stop</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__iter__</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="keyword">return</span> self</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__next__</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="keyword">if</span> self.data &gt;= self.stop:</span><br><span class="line">            <span class="keyword">raise</span> StopIteration</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            self.data += <span class="number">1</span></span><br><span class="line">            <span class="keyword">return</span> self.data</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__contains__</span><span class="params">(self, key)</span>:</span></span><br><span class="line">        <span class="keyword">if</span> self.init &lt; key &lt; self.stop:</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">            </span><br><span class="line">obj = tObject()</span><br><span class="line"></span><br><span class="line">print(<span class="number">5</span> <span class="keyword">in</span> obj)</span><br></pre></td></tr></table></figure>
-<p>但是如果没有实现 <code>__contains__()</code> 这里这里就会首先进行一次迭代操作，然后去判断。</p>
-<ul>
-<li><p><code>print()</code>或<code>str()</code></p>
-<p><code>__repr__()</code>的目的应该是能准确表达出对象。</p>
-<p><code>__str__()</code>的目的是能友好的可读的表达对象。</p>
+<li><h6 id="容器-Container"><a href="#容器-Container" class="headerlink" title="容器 (Container)"></a>容器 (<code>Container</code>)</h6><p>镜像 (<code>Image</code>) 和容器 (<code>Container</code>) 的关系，就像是面向对象程序设计中的类(<code>class</code>)和实例(<code>Instance</code>) 一样，镜像是静态的定义，容器是镜像运行时的实体。容器可以被创建、启动、停止、删除、暂停等。</p>
+<p>容器的实质是进程，但与直接在宿主执行的进程不同，容器进程运行于属于自己的独立的 命名空间。因此容器可以拥有自己的 <code>root</code> 文件系统、自己的网络配置、自己的进程空间，甚至自己的用户 <code>ID</code> 空间。容器内的进程是运行在一个隔离的环境里，使用起来，就好像是在一个独立于宿主的系统下操作一样。这种特性使得容器封装的应用比直接在宿主运行更加安全。也因为这种隔离的特性，很多人初学 <code>Docker</code> 时常常会混淆容器和虚拟机。</p>
+<p>前面讲过镜像使用的是分层存储，容器也是如此。每一个容器运行时，是以镜像为基础层，在其上创建一个当前容器的存储层，我们可以称这个为容器运行时读写而准备的存储层为 容器存储层。</p>
+<p>容器存储层的生存周期和容器一样，容器消亡时，容器存储层也随之消亡。因此，任何保存于容器存储层的信息都会随容器删除而丢失。</p>
+<p>按照 Docker 最佳实践的要求，容器不应该向其存储层内写入任何数据，容器存储层要保持无状态化。所有的文件写入操作，都应该使用 数据卷 (<code>Volume</code>)、或者绑定宿主目录，在这些位置的读写会跳过容器存储层，直接对宿主(或网络存储) 发生读写，其性能和稳定性更高。</p>
+<p>数据卷的生存周期独立于容器，容器消亡，数据卷不会消亡。因此，使用数据卷后，容器删除或者重新运行之后，数据却不会丢失。</p>
 </li>
-</ul>
-<ul>
-<li><p><code>[]</code> 取值&amp;赋值&amp;操作</p>
-<p>分别是 <code>__getitem__()</code> 和 <code>__setitem__()</code></p>
+<li><h6 id="仓库-Repository"><a href="#仓库-Repository" class="headerlink" title="仓库(Repository)"></a>仓库(<code>Repository</code>)</h6><p>镜像构建完成后，可以很容易的在当前宿主机上运行，但是，如果需要在其它服务器上使用这个镜像，我们就需要一个集中的存储、分发镜像的服务，<code>Docker Registry</code> 就是这样的服务。</p>
+<p>一个 <code>Docker Registry</code> 中可以包含多个<strong>仓库（<code>Repository</code>）</strong>；每个仓库可以包含多个<strong>标签（<code>Tag</code>）</strong>；每个标签对应一个镜像。</p>
+<p>通常，一个仓库会包含同一个软件不同版本的镜像，而标签就常用于对应该软件的各个版本。我们可以通过 <strong>&lt;仓库名&gt;:&lt;标签&gt;</strong> 的格式来指定具体是这个软件哪个版本的镜像。如果不给出标签，将以 <code>latest</code> 作为默认标签。</p>
+<p>以 <code>Ubuntu</code> 镜像 为例，<code>ubuntu</code> 是仓库的名字，其内包含有不同的版本标签，如，16.04, 18.04。我们可以通过 <code>ubuntu:16.04</code>，或者 <code>ubuntu:18.04</code> 来具体指定所需哪个版本的镜像。如果忽略了标签，比如 <code>ubuntu</code>，那将视为 <code>ubuntu:latest</code>。</p>
+<p>仓库名经常以 <strong>两段式路径</strong> 形式出现，比如 <code>jwilder/nginx-proxy</code>，前者往往意味着 <code>Docker Registry</code> 多用户环境下的用户名，后者则往往是对应的软件名。但这并非绝对，取决于所使用的具体 <code>Docker Registry</code> 的软件或服务。</p>
 </li>
-</ul>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">tObject</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self)</span>:</span></span><br><span class="line">        self.data = dict()</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__getitem__</span><span class="params">(self, key)</span>:</span></span><br><span class="line">        <span class="keyword">return</span> self.data.get(key, <span class="string">'N/A'</span>)</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__setitem__</span><span class="params">(self, key, val)</span>:</span></span><br><span class="line">        self.data[key] = val</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">obj = tObject()</span><br><span class="line">obj[<span class="string">'1'</span>] = <span class="string">'a'</span></span><br><span class="line">print(obj[<span class="string">'1'</span>])</span><br></pre></td></tr></table></figure>
-<p><code>__getitem__()</code> 方法用于返回参数 <code>key</code> 所对应的值，这个 <code>key</code> 可以是索引，关键字或切片对象，并且支持负数索引；如果 <code>key</code> 不是以上两种类型，就会抛出 <code>TypeError</code> ；如果索引越界，会抛 <code>IndexError</code> ；如果定义的是映射类型，当 <code>key</code> 参数不是其对象的键值时，则会抛出 <code>KeyError</code></p>
+</ol>
 
       
     </div>
@@ -535,7 +487,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Fluent-Python/" rel="tag"># Fluent Python</a>
+            <a href="/tags/Docker/" rel="tag"># Docker</a>
           
         </div>
       
@@ -548,8 +500,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/item/4a17b156/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
+              <a href="/item/609f08f9/" rel="next" title="Hexo-gitalk-Pushover 实现消息推送">
+                <i class="fa fa-chevron-left"></i> Hexo-gitalk-Pushover 实现消息推送
               </a>
             
           </div>
@@ -557,10 +509,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/item/2e88435f/" rel="prev" title="流畅的Python - 序列构成的数组 (二)">
-                流畅的Python - 序列构成的数组 (二) <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -614,8 +562,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -673,6 +630,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-6"><a class="nav-link" href="#镜像-Image"><span class="nav-number">1.</span> <span class="nav-text">镜像 (Image)</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#容器-Container"><span class="nav-number">2.</span> <span class="nav-text">容器 (Container)</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#仓库-Repository"><span class="nav-number">3.</span> <span class="nav-text">仓库(Repository)</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
