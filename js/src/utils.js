@@ -7,7 +7,7 @@ NexT.utils = NexT.$u = {
   wrapImageWithFancyBox: function () {
     $('.content img')
       .not('[hidden]')
-      .not('.group-picture img, .post-gallery img' + CONFIG.emojis.className)
+      .not('.group-picture img, .post-gallery img')
       .each(function () {
         var $image = $(this);
         var imageTitle = $image.attr('title');
