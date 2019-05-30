@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="Linux,">
+  <meta name="keywords" content="Hexo,">
 
 
 
@@ -88,18 +88,18 @@
 
 
 
-<meta name="description" content="Supervisor Supervisor 是一个用 Python2 实现的 Unix-like 系统进程管理工具。 安装  Ubuntu : apt install supervisor 其他 Linux 发行版: pip install supervisor (只支持 Python2 因此请确定是Python2的pip)  安装完成后会生成三个执行程序：supervisortd supervi">
-<meta name="keywords" content="Linux">
+<meta name="description" content="Hexo 中默认 markdown 渲染器是 hexo-renderer-marked ，这个渲染器是不支持 emoji 表情的。所以我们需要采取一个第三方插件来完成         安装  1npm install hexo-filter-github-emojis --save  配置  打开 站点配置文件 _config.yml 并添加以下内容：123456githubEmojis:  en">
+<meta name="keywords" content="Hexo">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Linux&#x2F;Unix进程管理工具 - Supervisor">
-<meta property="og:url" content="https://www.zranbo.com/item/1f6c73c0/index.html">
+<meta property="og:title" content="让 Hexo 支持 Emoji 表情">
+<meta property="og:url" content="https://www.zranbo.com/item/917c88c8/index.html">
 <meta property="og:site_name" content="Chaos">
-<meta property="og:description" content="Supervisor Supervisor 是一个用 Python2 实现的 Unix-like 系统进程管理工具。 安装  Ubuntu : apt install supervisor 其他 Linux 发行版: pip install supervisor (只支持 Python2 因此请确定是Python2的pip)  安装完成后会生成三个执行程序：supervisortd supervi">
+<meta property="og:description" content="Hexo 中默认 markdown 渲染器是 hexo-renderer-marked ，这个渲染器是不支持 emoji 表情的。所以我们需要采取一个第三方插件来完成         安装  1npm install hexo-filter-github-emojis --save  配置  打开 站点配置文件 _config.yml 并添加以下内容：123456githubEmojis:  en">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-05-28T13:56:02.013Z">
+<meta property="og:updated_time" content="2019-05-30T03:45:58.469Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Linux&#x2F;Unix进程管理工具 - Supervisor">
-<meta name="twitter:description" content="Supervisor Supervisor 是一个用 Python2 实现的 Unix-like 系统进程管理工具。 安装  Ubuntu : apt install supervisor 其他 Linux 发行版: pip install supervisor (只支持 Python2 因此请确定是Python2的pip)  安装完成后会生成三个执行程序：supervisortd supervi">
+<meta name="twitter:title" content="让 Hexo 支持 Emoji 表情">
+<meta name="twitter:description" content="Hexo 中默认 markdown 渲染器是 hexo-renderer-marked ，这个渲染器是不支持 emoji 表情的。所以我们需要采取一个第三方插件来完成         安装  1npm install hexo-filter-github-emojis --save  配置  打开 站点配置文件 _config.yml 并添加以下内容：123456githubEmojis:  en">
 
 
 
@@ -132,13 +132,13 @@
 
 
 
-  <link rel="canonical" href="https://www.zranbo.com/item/1f6c73c0/">
+  <link rel="canonical" href="https://www.zranbo.com/item/917c88c8/">
 
 
 
 
 
-  <title>Linux/Unix进程管理工具 - Supervisor | Chaos</title>
+  <title>让 Hexo 支持 Emoji 表情 | Chaos</title>
   
 
 
@@ -316,7 +316,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://www.zranbo.com/item/1f6c73c0/">
+    <link itemprop="mainEntityOfPage" href="https://www.zranbo.com/item/917c88c8/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="zranbo">
@@ -333,7 +333,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Linux/Unix进程管理工具 - Supervisor</h1>
+          <h1 class="post-title" itemprop="name headline">让 Hexo 支持 Emoji 表情</h1>
         
 
         <div class="post-meta">
@@ -345,8 +345,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-05-28T16:40:00+08:00">
-                2019-05-28
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-05-30T11:04:00+08:00">
+                2019-05-30
               </time>
             
 
@@ -377,7 +377,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1.2k
+                  270
                 </span>
               
 
@@ -393,7 +393,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  5
+                  1
                 </span>
               
             </div>
@@ -414,26 +414,24 @@
       
 
       
-        <p><b>Supervisor</b></p>
-<p><a href="http://supervisord.org/" target="_blank" rel="noopener"><code>Supervisor</code></a> 是一个用 <code>Python2</code> 实现的 Unix-like 系统进程管理工具。</p>
-<p><b>安装</b></p>
-<ol>
-<li>Ubuntu : <code>apt install supervisor</code></li>
-<li>其他 Linux 发行版: <code>pip install supervisor</code> (只支持 <code>Python2</code> 因此请确定是<code>Python2</code>的<code>pip</code>)</li>
-</ol>
-<p>安装完成后会生成三个执行程序：<code>supervisortd</code> <code>supervisorctl</code> <code>echo_supervisord_conf</code> 分别是：守护进程服务、客户端、初始配置文件程序。</p>
-<p><b>配置</b></p>
-<p>运行 <code>supervisord</code> 要指定 <code>supervisor</code> 配置文件,默认在以下目录查找：<br></p><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/etc/supervisor/supervisord.conf</span><br></pre></td></tr></tbody></table></figure><p></p>
-<p>并且可以通过 <code>echo_supervisord_conf</code> 生成一份 <code>supervisor</code> 配置文件<br></p><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo_supervisord_conf > /etc/supervisor/supervisord.conf</span><br></pre></td></tr></tbody></table></figure><p></p>
-<p><b>主程序配置文件说明</b></p>
-<p>注释：以分号 <code>;</code> 开头的表示注释行<br></p><figure class="highlight ini"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">[unix_http_server]</span></span><br><span class="line"><span class="attr">file</span>=/tmp/supervisor.sock		; UNIX socket 文件，supervisorctl要用</span><br><span class="line"><span class="comment">;chmod=0700				; socket文件的权限，默认是0700</span></span><br><span class="line"><span class="comment">;chown=nobody:nogroup			; socket文件的 owner，格式：uid:gid</span></span><br><span class="line"><span class="comment">;username=user				; 登录管理后台的用户名</span></span><br><span class="line"><span class="comment">;password=123				; 登录管理后台的密码</span></span><br><span class="line"></span><br><span class="line"><span class="section">[inet_http_server]</span>			<span class="comment">; HTTP服务，提供Web端管理界面</span></span><br><span class="line"><span class="attr">port</span>=<span class="number">127.0</span>.<span class="number">0.1</span>:<span class="number">9001</span>			; Web管理后台运行的IP和端口</span><br><span class="line"><span class="attr">username</span>=user				; 登录管理后台的用户名</span><br><span class="line"><span class="attr">password</span>=<span class="number">123</span>				; 登录管理后台的密码</span><br><span class="line"></span><br><span class="line"><span class="section">[supervisord]</span></span><br><span class="line"><span class="attr">logfile</span>=/tmp/supervisord.log 		; 主程序的日志文件</span><br><span class="line"><span class="attr">logfile_maxbytes</span>=<span class="number">50</span>MB        		; 主程序日志大小，默认 <span class="number">50</span>MB，<span class="number">0</span>，表示不限制</span><br><span class="line"><span class="attr">logfile_backups</span>=<span class="number">10</span>           		; 主程序日志备份数量，默认<span class="number">10</span>，<span class="number">0</span>，表示不备份</span><br><span class="line"><span class="attr">loglevel</span>=info                		; 主程序日志级别，默认 info，其它: debug,warn,trace</span><br><span class="line"><span class="attr">pidfile</span>=/tmp/supervisord.pid 		; supervisord pid 文件; 默认 supervisord.pid</span><br><span class="line"><span class="attr">nodaemon</span>=<span class="literal">false</span>               		; 是否在前台启动，默认是<span class="literal">false</span>，即以 daemon 的方式启动</span><br><span class="line"><span class="attr">minfds</span>=<span class="number">1024</span>                  		; 可以打开的文件描述符的最小值，默认 <span class="number">1024</span></span><br><span class="line"><span class="attr">minprocs</span>=<span class="number">200</span>                 		; 可以打开的进程数的最小值，默认 <span class="number">200</span></span><br><span class="line"><span class="comment">;umask=022                   		; umask 022 创建新文件权限为755</span></span><br><span class="line"><span class="comment">;user=chrism                 		; 启动用户，默认为当前用户</span></span><br><span class="line"><span class="comment">;identifier=supervisor       		; supervisord 标识, 默认 `supervisor`</span></span><br><span class="line"><span class="comment">;directory=/tmp              		; 当 supervisord 守护进程时，切换到此目录</span></span><br><span class="line"><span class="comment">;nocleanup=true              		; 启动时清除子日志文件，默认 false</span></span><br><span class="line"><span class="comment">;childlogdir=/tmp            		; 子日志文件路径 默认为 $TEMP</span></span><br><span class="line"><span class="comment">;environment=KEY="value"     		; 添加环境变量到 supervisord 进程的环境中</span></span><br><span class="line"><span class="comment">;strip_ansi=false            		; 删除日志文件中所有ANSI转义序列</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="section">[rpcinterface:supervisor]</span></span><br><span class="line"><span class="attr">supervisor.rpcinterface_factory</span> = supervisor.rpcinterface:make_main_rpcinterface</span><br><span class="line"></span><br><span class="line"><span class="section">[supervisorctl]</span></span><br><span class="line"><span class="attr">serverurl</span>=unix:///tmp/supervisor.sock	; 通过UNIX socket 连接supervisord，与[unix_http_server]部分file一致</span><br><span class="line"><span class="comment">;serverurl=http://127.0.0.1:9001 	; 通过 HTTP 方式连接 supervisord</span></span><br><span class="line"><span class="comment">;username=chris              		; 用于身份验证的用户名。与 supervisord 服务器配置的用户名相同</span></span><br><span class="line"><span class="comment">;password=123                		; 用于身份验证的密码。与 supervisord 服务器配置的密码的明文相同。</span></span><br><span class="line"><span class="comment">;prompt=mysupervisor         		; 用作 supervisorctl 提示符的字符串</span></span><br><span class="line"><span class="comment">;history_file=~/.sc_history  		; 用作 readline 持久性历史记录文件的路径</span></span><br><span class="line"></span><br><span class="line"><span class="section">[include]</span></span><br><span class="line"><span class="attr">files</span> = /etc/supervisor/conf.d/*.ini 	; 可以指定一个或多个以.ini结束的配置文件</span><br></pre></td></tr></tbody></table></figure><p></p>
-<p><b>配置管理进程</b></p>
-<p>进程管理配置参数，不建议全都写在 <code>supervisord.conf</code> 文件中，建议每个进程采用一个配置文件放到 <code>supervisord.conf</code> 配置中 <code>[include]</code>字段 <code>files</code> 指定的路径下</p>
-<figure class="highlight ini"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">;[program:programname]			; program:xxx (xxx 为自定义的管理的进程的名称名称，不可重复)</span></span><br><span class="line"><span class="comment">;command=/bin/cat			; 程序启动命令 (该命令只能是前台任务命令)</span></span><br><span class="line"><span class="comment">;process_name=%(program_name)s		; 进程名称</span></span><br><span class="line"><span class="comment">;numprocs=1				; 进程数量 (默认为 1)</span></span><br><span class="line"><span class="comment">;directory=/tmp               		; 在执行 command 之前，supervisord 切换到的目录。</span></span><br><span class="line"><span class="comment">;autostart=true                		; supervisord 启动的时候也自动启动</span></span><br><span class="line"><span class="comment">;startsecs=1                   		; 启动1秒后没有异常退出，就表示进程正常启动了，默认为1秒</span></span><br><span class="line"><span class="comment">;startretries=3                		; 启动失败自动重试次数，默认是3次</span></span><br><span class="line"><span class="comment">;autorestart=unexpected        		; 程序退出后自动重启,可选值：[unexpected,true,false]，默认为unexpected，表示进程意外杀死后才重启</span></span><br><span class="line"><span class="comment">;stopasgroup=false             		; 进程被杀死时，是否向这个进程组发送stop信号，包括子进程</span></span><br><span class="line"><span class="comment">;killasgroup=false             		; 进程组发送kill信号，包括子进程</span></span><br><span class="line"><span class="comment">;user=chrism                   		; 启动进程的用户</span></span><br><span class="line"><span class="comment">;redirect_stderr=false          	; 把stderr重定向到stdout，默认false</span></span><br><span class="line"><span class="comment">;stdout_logfile=/a/path        		; stdout 日志文件路径</span></span><br><span class="line"><span class="comment">;stdout_logfile_maxbytes=1MB   		; stdout 日志文件大小 0 表示无限制</span></span><br><span class="line"><span class="comment">;stdout_logfile_backups=10     		; stdout 日志文件备份数量 0 表示不备份</span></span><br><span class="line"><span class="comment">;stdout_capture_maxbytes=1MB   		; stdout 捕获模式 日志文件大小</span></span><br><span class="line"><span class="comment">;stderr_logfile=/a/path        		; stderr 日志文件路径</span></span><br><span class="line"><span class="comment">;stderr_logfile_maxbytes=1MB   		; stderr 日志文件大小 0 表示无限制</span></span><br><span class="line"><span class="comment">;stderr_logfile_backups=10     		; stderr 日志文件备份数量 0 表示不备份</span></span><br><span class="line"><span class="comment">;stderr_capture_maxbytes=1MB   		; stderr 捕获模式 日志文件大小</span></span><br><span class="line"><span class="comment">;environment=A="1",B="2"       		; 添加环境变量到子进程的环境中</span></span><br></pre></td></tr></tbody></table></figure>
-<p><b>启动Supervisor服务</b></p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">supervisord -c /etc/supervisor/supervisord.conf</span><br></pre></td></tr></tbody></table></figure>
-<p><b>supervisorctl 管理进程</b></p>
-<p>启动成功后，就可以通过 supervisorctl 管理进程。在 shell 中直接输入 <code>supervisorctl</code> 就可以直接进入交互式的环境中<br></p><figure class="highlight shell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">supervisor></span><span class="bash"> status		<span class="comment"># 查看所有进程的状态</span></span></span><br><span class="line"><span class="meta">supervisor></span><span class="bash"> update		<span class="comment"># 重启配置文件修改过的程序</span></span></span><br><span class="line"><span class="meta">supervisor></span><span class="bash"> reread		<span class="comment"># 读取有更新（增加）的配置文件，不会启动新添加的程序</span></span></span><br><span class="line"><span class="meta">supervisor></span><span class="bash"> start program	<span class="comment"># 启动 program 程序</span></span></span><br><span class="line"><span class="meta">supervisor></span><span class="bash"> stop program	<span class="comment"># 停止 program 程序</span></span></span><br><span class="line"><span class="meta">supervisor></span><span class="bash"> restart program	<span class="comment"># 重启 program 程序</span></span></span><br></pre></td></tr></tbody></table></figure><p></p>
+        <p>Hexo 中默认 markdown 渲染器是 hexo-renderer-marked ，这个渲染器是不支持 emoji 表情的。所以我们需要采取一个第三方插件来完成</p>
+<div style="text-align:center">
+  <div class="github-card" data-user="crimx" data-repo="hexo-filter-github-emojis" data-width="100%" data-theme="default" data-target="blank" data-client-id data-client-secret></div>
+</div>
+<script src="/github-card-lib/githubcard.js"></script>
+
+<p><strong> 安装 </strong></p>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-filter-github-emojis --save</span><br></pre></td></tr></tbody></table></figure>
+<p><strong> 配置 </strong></p>
+<p>打开 <code>站点配置文件 _config.yml</code> 并添加以下内容：<br></p><figure class="highlight yaml"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">githubEmojis:</span></span><br><span class="line"><span class="attr">  enable:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">  className:</span> <span class="string">github-emoji</span></span><br><span class="line"><span class="attr">  unicode:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">  styles:</span></span><br><span class="line"><span class="attr">  localEmojis:</span></span><br></pre></td></tr></tbody></table></figure><p></p>
+<p><strong> 针对 NexT 主题优化 </strong></p>
+<p>修改 <code>themes/next/layout/_partials/head.swig</code></p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">algolia: {</span><br><span class="line">  applicationID: '{{ theme.algolia.applicationID }}',</span><br><span class="line">  apiKey: '{{ theme.algolia.apiKey }}',</span><br><span class="line">  indexName: '{{ theme.algolia.indexName }}',</span><br><span class="line">  hits: {{ theme.algolia_search.hits | json_encode }},</span><br><span class="line">  labels: {{ theme.algolia_search.labels | json_encode }}</span><br><span class="line">},</span><br><span class="line">{# 只修改这里添加 emojis 参数 #}</span><br><span class="line">emojis: {</span><br><span class="line">  className: '{{ config.githubEmojis.className | default('github-emoji') }}'</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<p>修改 <code>themes/next/source/js/src/utils.js</code></p>
+<figure class="highlight"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">'.content img'</span>)</span><br><span class="line">  .not(<span class="string">'[hidden]'</span>)</span><br><span class="line">  .not('.group-picture img, .post-gallery img, img.' + CONFIG.emojis.className) # 修改这里，添加 CONFIG.emojis.className</span><br></pre></td></tr></tbody></table></figure>
+<p><strong> 使用方法 </strong></p>
+<p>在 <a href="https://www.webfx.com/tools/emoji-cheat-sheet/" target="_blank" rel="noopener">Emoji Cheat Sheet</a> 中找到你想用的表情，点击复制</p>
+<p>直接粘贴上面复制的 emoji 编码，例如 <code>:smile:</code> 就可以显示对应的 emoji 表情 <span class="github-emoji" style="color: transparent;background:no-repeat url(https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png?v8) center/contain" data-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png?v8">😄</span></p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -496,7 +494,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://www.zranbo.com/item/1f6c73c0/" title="Linux/Unix进程管理工具 - Supervisor">https://www.zranbo.com/item/1f6c73c0/</a>
+    <a href="https://www.zranbo.com/item/917c88c8/" title="让 Hexo 支持 Emoji 表情">https://www.zranbo.com/item/917c88c8/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -511,7 +509,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Linux/" rel="tag"># Linux</a>
+            <a href="/tags/Hexo/" rel="tag"># Hexo</a>
           
         </div>
       
@@ -524,8 +522,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/item/d12c295b/" rel="next" title="流畅的Python - 文本和字节序列 (四)">
-                <i class="fa fa-chevron-left"></i> 流畅的Python - 文本和字节序列 (四)
+              <a href="/item/f79e33ca/" rel="next" title="Docker从入门到再入门 - 初识 (一)">
+                <i class="fa fa-chevron-left"></i> Docker从入门到再入门 - 初识 (一)
               </a>
             
           </div>
@@ -533,10 +531,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/item/609f08f9/" rel="prev" title="Hexo-gitalk-Pushover 实现消息推送">
-                Hexo-gitalk-Pushover 实现消息推送 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
