@@ -96,7 +96,7 @@
 <meta property="og:site_name" content="Chaos">
 <meta property="og:description" content="Hello World  通过一个简单的 hello world 的例子体验一下 Docker 的使用 docker search 可以找到我们想要的镜像123456789101112131415161718192021222324252627 $ docker search hello-worldNAME                                       DESCRI">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-05-30T10:29:01.275Z">
+<meta property="og:updated_time" content="2019-05-30T10:43:15.314Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Docker从入门到再入门 - Hello World (二)">
 <meta name="twitter:description" content="Hello World  通过一个简单的 hello world 的例子体验一下 Docker 的使用 docker search 可以找到我们想要的镜像123456789101112131415161718192021222324252627 $ docker search hello-worldNAME                                       DESCRI">
@@ -374,7 +374,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  941
+                  979
                 </span>
               
 
@@ -425,6 +425,7 @@
 </ul>
 <p>从上一篇中我们知道，镜像(Image)和容器(Container)的关系就好像类和实例一样，因此如果想运行这个镜像，就必须先‘实例化’一下这个镜像。而这个‘实例’的过程就是 <code>docker run</code> 命令来完成。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">$ docker run hello-world</span><br><span class="line"></span><br><span class="line">Hello from Docker!</span><br><span class="line">This message shows that your installation appears to be working correctly.</span><br><span class="line"></span><br><span class="line">To generate this message, Docker took the following steps:</span><br><span class="line"> 1. The Docker client contacted the Docker daemon.</span><br><span class="line"> 2. The Docker daemon pulled the <span class="string">"hello-world"</span> image from the Docker Hub.</span><br><span class="line">    (amd64)</span><br><span class="line"> 3. The Docker daemon created a new container from that image <span class="built_in">which</span> runs the</span><br><span class="line">    executable that produces the output you are currently reading.</span><br><span class="line"> 4. The Docker daemon streamed that output to the Docker client, <span class="built_in">which</span> sent it</span><br><span class="line">    to your terminal.</span><br><span class="line"></span><br><span class="line">To try something more ambitious, you can run an Ubuntu container with:</span><br><span class="line"> $ docker run -it ubuntu bash</span><br><span class="line"></span><br><span class="line">Share images, automate workflows, and more with a free Docker ID:</span><br><span class="line"> https://hub.docker.com/</span><br><span class="line"></span><br><span class="line">For more examples and ideas, visit:</span><br><span class="line"> https://docs.docker.com/get-started/</span><br></pre></td></tr></table></figure>
+<p>我们需要注意的是，<code>docker run</code> 命令如果是一个本地不存在的镜像首先会尝试下载，然后运行容器。</p>
 <p><code>hello-world</code> 镜像再运行后会输出以上内容，输出以后容器自动停止，停止的容器并不会被删除。我们可以用 <code>docker ps -a</code> 命令查看所有的容器。</p>
 <p>注意：查看容器的命令 <code>docker ps</code> 但此时只能查看当前正在运行的容器，而想要查看所有容器(包含未运行)就需要 <code>-a</code> 参数</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ docker ps -a</span><br><span class="line">CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS                     PORTS               NAMES</span><br><span class="line">814d3d9a317b        hello-world         <span class="string">"/hello"</span>            3 minutes ago       Exited (0) 3 minutes ago                       boring_ishizaka</span><br></pre></td></tr></table></figure>
@@ -659,7 +660,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">7.9k</span>
+    <span title="Site words total count">8k</span>
   
 </div>
 
