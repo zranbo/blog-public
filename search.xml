@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>Docker从入门到再入门 - 常用命令合集 (三)</title>
+      <link href="/item/9a385b47/"/>
+      <url>/item/9a385b47/</url>
+      
+        <content type="html"><![CDATA[<p><strong> run </strong></p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run [OPTIONS] IMAGE [COMMAND] [ARG...]</span><br></pre></td></tr></table></figure><p><strong> 参数 </strong></p><ul><li><code>-a</code>：指定标准输入输出内容类型，可选 <code>stdin|stdout|stderr</code></li><li><code>-d</code>：后台运行容器，返回容器ID</li><li><code>-p</code>：端口映射 <code>local-port:docker-port</code></li><li><code>-v</code>：挂载目录 <code>local-dir:docker-dir</code></li><li><code>-i</code>：以交互模式运行容器，通常与 <code>-t</code> 同时使用</li><li><code>-t</code>：为容器分配一个伪终端，通常与 <code>-i</code> 同时使用</li><li><code>-h</code>：为容器指定一个 hostname</li><li><code>-m</code>：指定容器使用内存最大值</li><li><code>-e envname=&quot;value&quot;</code>：添加环境变量</li><li><code>--env-file=[]</code>：从文件读入环境变量</li><li><code>--name</code>：为容器指定一个名称</li><li><code>--dns</code>: 指定容器使用的DNS服务器，默认和宿主一致</li><li><code>--net=&quot;bridge&quot;</code>：指定容器的网络连接类型，可选 <code>bridge|host|none|container</code></li><li><code>--link=[]</code>：链接到另一个容器</li><li><code>--expose=[]</code>：开放一个端口或一组端口</li></ul>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Docker </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Docker从入门到再入门 - Hello World (二)</title>
       <link href="/item/83fde42c/"/>
       <url>/item/83fde42c/</url>
